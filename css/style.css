@@ -5,7 +5,11 @@
 }
 body{
     font-family: "Open Sans", sans-serif;
+    font-size: 19px;
+    color: #242424;
 }
+h2{font-size: 2.2em;
+  color: #242424;}
 #logos{
     background-color: #fff;
     height: 105px;
@@ -125,6 +129,7 @@ li a.actif{
 /*Css section banner*/
 div.banner{
   position: relative;
+  
 }
 .banner .Imgbanner{
   width: 100%;
@@ -134,7 +139,7 @@ div.banner{
   position: absolute;
   top: 25%;
   left: 15px;
-  font-size: 3.2em;
+  font-size: 2.6em;
   font-family: Verdana, sans-serif;
   width: 50%;
 }
@@ -165,7 +170,70 @@ div.banner{
   border-radius: 15px;
   padding: 13px;
   transition: all .2s;
+ }
+ .apropos{
+  padding-top: 80px;
+  margin: 0px 30px 20px 50px;
+ }
+ .apropos h2{
+  padding-bottom: 50px;
+ }
+ .apropos #content-apropos{
+ float: left;
+ width: 50%;
+ margin-left: 40px;
+ }
+ .apropos .imgApropos{
+  float: left;
+  width: 600px;
+  border-radius: 15px;
+  box-shadow: 2px 4px 20px #d7d7d7;
+ }
+ #content-apropos .more{
+  margin-top: 100px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+ }
+ .voirplus{
+  background-color: #950014;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 10px;
+ }
+ .voirplus:hover{
+  background-color: #fff;
+  color: #950014;
+  border: 3px solid #950014;
+  text-decoration: none;
+  padding: 13px 23px;
+  transition: all .2s;
  
  }
-
+ .service{
+  clear: both;
+ background-color: #f8f6f6;
+ margin-top: 35%;
+ }
+ .service h2{
+  text-align: center;
+  padding: 60px;
+ }
+ .service .Imgservice{
+  width: 95%;
+ margin-left: auto;
+ margin-right: auto;
+}
+ .service .Imgservice div{
+  display: inline-block;
+  margin-left: 40px;
+}
+.service .Imgservice div img{
+  width: 420px;
+  border-radius: 15px;
+}
+.service .Imgservice div span{
+  display: block;
+}
 
