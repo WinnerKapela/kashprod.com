@@ -1,5 +1,21 @@
+//dropdowMenu
+var ul = document.getElementById('dropdownElement');
+var aLink = document.getElementById('linkMenu');
+var ulhide = document.getElementById('drop-down-Menu');
 
-jQuery(document).ready(function( $ ) {
+ul.addEventListener('mouseover',afficheMenu);
+ul.addEventListener('mouseout',cacheMenu);
+
+function afficheMenu(){
+  ulhide.style.display = 'block';
+  aLink.style.opacity = '1';
+}
+function cacheMenu(){
+  ulhide.style.display = '';
+  aLink.style.opacity = '';
+}
+
+jQuery(document).ready(function( $ ){
 
     // Back to top button
     $(window).scroll(function() {

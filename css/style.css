@@ -35,8 +35,8 @@ h2{font-size: 2.2em;
 }
 #navigation{
     height: 75px;
-    background-color: #6f0312;
-    opacity: 0.9;
+    background-color: #721723;
+   
     position: sticky;
     transition: all 0.5s;
     z-index: 997;
@@ -50,16 +50,17 @@ h2{font-size: 2.2em;
     top: 0;
     width: 100%;
   }
-ul{
+.menu{
     float: left;
     display: flex;
     list-style-type: none;
     line-height: 70px;
 }
-li{
+ul.menu li{
     margin-left: 180px;
+  
 }
-li a{
+ul.menu li a{
     text-decoration: none;
     font-size: 20px;
     color: #fff;
@@ -87,18 +88,73 @@ li #link-contact:hover{
   from{border-bottom: 1px solid #fff;}
   to{border-bottom: 4px solid #fff;}
 }
-li a:hover{
+ul.menu .link a:hover{
   transition: all .5s;
   -moz-transition: all .2s;
   animation: bordure .2s cubic-bezier(0, 0, 0, 1.14);
   border-bottom: 4px solid #fff;
   opacity: 1;
 }
-
-li a.actif{
+ul.menu .link a.actif{
   border-bottom: 4px solid #fff;
   opacity: 1;
 }
+ul.menu .link a.actif:hover{
+  animation: none;
+}
+/**dropdownmenu**/
+.menu #dropdownElement {
+ position: relative;
+}
+@keyframes display{
+  from{top: 55px;}
+  to{top: 70px;}
+}
+#dropdownElement .dropdownMenu {
+  position: absolute;
+  display: none;
+  top: 70px;
+  left: -50px;
+  background-color: #9c1527;
+  border-radius: 15px;
+  width: 210px;
+  line-height: 10px;
+  padding-top: 25px;
+  animation: display .5s cubic-bezier(0, 0.59, 0, 1.22);
+}
+#dropdownElement #linkMenu{
+  padding:0px 5px 25px 5px;
+  opacity:0.8;
+ }
+ #dropdownElement #linkMenu:hover{
+  opacity:1;
+ }
+#dropdownElement .dropdownMenu li{
+ list-style-type: none;
+ margin-left: 0px;
+ text-align: left;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 20px;
+ text-align: center;
+ padding: 15px 0px;
+ width: 97%;
+ transition: all .3s;
+}
+#dropdownElement .dropdownMenu li:hover{
+  background-color: #c73d4fe7;
+  border-radius: 10px;
+ }
+#dropdownElement .dropdownMenu li a{
+  font-size: 17px;
+  padding: 10px;
+ }
+ #dropdownElement .dropdownMenu li a:hover{
+  border: none;
+  animation: none;
+  opacity: 1;
+  
+ }
 .back-to-top {
   position: fixed;
   display: none;
@@ -171,12 +227,67 @@ div.banner{
   padding: 13px;
   transition: all .2s;
  }
+ .service-annonce{
+  margin: 100px 0px;
+}
+.service-annonce .msg-annonce{
+ text-align: center;
+ width: 80%;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 20px;
+ font-size: 22px;
+ color:#4b4b4b;
+}
+.service-annonce .msg-annonce .msg1, .msg2, .msg3{
+  font-weight: 600;
+  color:#bc0a0a;
+ }
+ .service-Element{
+   margin-left: auto;
+   margin-right: auto;
+   padding:100px;
+   width: 85%;
+   background-color: rgb(243, 243, 243);
+   border-radius: 15px;
+ }
+ .service-Element div{
+  box-shadow: 2px 5px 12px 2px #d3d3d3;
+  background-color: #fff;
+  display: inline-block;
+  width: 160px;
+  border-radius: 15px;
+  margin-left: 90px;
+ }
+ .service-Element div:hover{
+  box-shadow: 2px 5px 12px 2px #d3d3d3;
+  background-color: rgb(248, 212, 212);
+  transform: scale(1.07);
+ }
+ .service-Element a{
+ text-decoration: none;
+ color: rgb(114, 114, 114);
+ font-weight: 600;
+}
+.service-Element span{
+  font-size: 14px;
+ text-align: center;
+ display: block;
+ margin-top: -25px;
+ padding-bottom: 10px;
+ 
+ }
+ .service-Element a img{
+  width: 150px;  
+  padding: 35px;
+}
  .apropos{
   padding-top: 80px;
   margin: 0px 30px 20px 50px;
  }
  .apropos h2{
   padding-bottom: 50px;
+  font-weight: 300;
  }
  .apropos #content-apropos{
  float: left;
@@ -213,27 +324,105 @@ div.banner{
  }
  .service{
   clear: both;
- background-color: #f8f6f6;
+ background-color: #f1f1f1;
  margin-top: 35%;
+ padding-bottom: 150px;
  }
  .service h2{
   text-align: center;
+  font-weight: 300;
   padding: 60px;
  }
+ .service p{
+  text-align: center;
+  padding: 10px 0px;
+ }
  .service .Imgservice{
-  width: 95%;
+  width: 100%;
+  margin-top: 30px;
  margin-left: auto;
  margin-right: auto;
+ 
 }
  .service .Imgservice div{
   display: inline-block;
-  margin-left: 40px;
+  margin-left: 80px;
+  box-shadow: 2px 4px 8px #d6d6d6;
+  border-radius: 15px;
+}
+.service .Imgservice div:hover{
+  box-shadow: 2px 4px 8px #c5c5c5;
+  transition: all .3s;
+  transform: scale(1.07);
+}
+.service .Imgservice div a{
+  text-decoration: none;
+  color: #242424;
 }
 .service .Imgservice div img{
-  width: 420px;
+  width: 400px;
   border-radius: 15px;
 }
 .service .Imgservice div span{
   display: block;
+  padding: 0px 0px 10px 0px;
+  margin-top: -30px;
+  text-align: center;
+  font-size: 17px;
+  width:400px ;
 }
-
+.service .Imgservice div span h2{
+  font-size: 23px; 
+  font-weight: 600;
+}
+.service .more2{
+  margin-top: 100px;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+ }
+ .vision{
+   margin-top: 0px;
+   position: relative;
+ }
+ .vision .ImgVision{
+  width: 100%;
+  height: 750px;
+ }
+ .vision .detail-vision{
+   position: absolute;
+   top: 0;
+   background-color: rgba(12, 12, 12, 0.600);
+   height: 750px;
+ }
+ .detail-vision .vision-content{
+   width: 58%;
+   text-align: justify;
+   color: #fff;
+   padding: 75px;
+ }
+ .detail-vision .vision-content h2{
+  color: #fff;
+  font-size: 2.4em;
+  margin-bottom: 35px;
+  font-weight: 300;
+}
+.detail-vision .vision-content .more3{
+  margin-top: 100px;
+}
+.more3 .voirplus{
+  background-color: #fff;
+  color: #950014;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 10px;
+ }
+ .more3 .voirplus:hover{
+  background-color: #fff;
+  color: #950014;
+  text-decoration: none;
+  padding: 13px 23px;
+  transition: all .2s;
+  border: none;
+ 
+ }
