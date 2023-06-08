@@ -15,6 +15,27 @@ function cacheMenu(){
   aLink.style.opacity = '';
 }
 
+//footer, service elements
+var li = document.getElementById('dropdownList');
+var closeli = document.getElementById('closeli')
+var img = document.getElementById('flecheDroite');
+var ul = document.getElementById('List');
+
+li.addEventListener('mouseover', displayElement);
+closeli.addEventListener('click', HideElement);
+
+function displayElement(){
+  img.setAttribute('src','img/down-arrow.png');
+  ul.style.display = 'block';
+
+}
+function HideElement(){
+  img.setAttribute('src','img/right-arrow.png');
+  ul.style.display = 'none';
+
+}
+
+
 jQuery(document).ready(function( $ ){
 
     // Back to top button

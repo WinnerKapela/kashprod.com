@@ -1,10 +1,11 @@
+
 *{
     padding:0;
     margin:0;
     box-sizing: border-box;
 }
 body{
-    font-family: "Open Sans", sans-serif;
+    font-family:'Montserrat Thin',"Open Sans", sans-serif;
     font-size: 19px;
     color: #242424;
 }
@@ -138,7 +139,7 @@ ul.menu .link a.actif:hover{
  margin-bottom: 20px;
  text-align: center;
  padding: 15px 0px;
- width: 97%;
+ width: 98%;
  transition: all .3s;
 }
 #dropdownElement .dropdownMenu li:hover{
@@ -146,7 +147,7 @@ ul.menu .link a.actif:hover{
   border-radius: 10px;
  }
 #dropdownElement .dropdownMenu li a{
-  font-size: 17px;
+  font-size: 15.5px;
   padding: 10px;
  }
  #dropdownElement .dropdownMenu li a:hover{
@@ -172,7 +173,7 @@ ul.menu .link a.actif:hover{
     width: 40px;
     height: 40px;
   padding-top: 6px;
-  z-index: 1;
+  z-index:  1;
 }
 .back-to-top:focus {
   background: #e0072f;
@@ -287,7 +288,7 @@ div.banner{
  }
  .apropos h2{
   padding-bottom: 50px;
-  font-weight: 300;
+  font-weight: 500;
  }
  .apropos #content-apropos{
  float: left;
@@ -330,7 +331,7 @@ div.banner{
  }
  .service h2{
   text-align: center;
-  font-weight: 300;
+  font-weight: 500;
   padding: 60px;
  }
  .service p{
@@ -349,6 +350,7 @@ div.banner{
   margin-left: 80px;
   box-shadow: 2px 4px 8px #d6d6d6;
   border-radius: 15px;
+  overflow: hidden;
 }
 .service .Imgservice div:hover{
   box-shadow: 2px 4px 8px #c5c5c5;
@@ -362,6 +364,10 @@ div.banner{
 .service .Imgservice div img{
   width: 400px;
   border-radius: 15px;
+}
+.Imgservice div img:hover{
+  transform: scale(1.05);
+  border-radius: 35px;
 }
 .service .Imgservice div span{
   display: block;
@@ -382,30 +388,31 @@ div.banner{
   margin-right: auto;
  }
  .vision{
-   margin-top: 0px;
-   position: relative;
+   margin-top: -1px;
+   position: relative; 
  }
  .vision .ImgVision{
   width: 100%;
   height: 750px;
+  transform: skewY(356.5deg); 
  }
  .vision .detail-vision{
    position: absolute;
    top: 0;
-   background-color: rgba(12, 12, 12, 0.600);
+   background-color: rgba(12, 12, 12, 0.637);
    height: 750px;
  }
  .detail-vision .vision-content{
    width: 58%;
    text-align: justify;
    color: #fff;
-   padding: 75px;
+   padding: 130px 80px 0px 80px;
  }
  .detail-vision .vision-content h2{
   color: #fff;
   font-size: 2.4em;
   margin-bottom: 35px;
-  font-weight: 300;
+  font-weight: 500;
 }
 .detail-vision .vision-content .more3{
   margin-top: 100px;
@@ -424,5 +431,178 @@ div.banner{
   padding: 13px 23px;
   transition: all .2s;
   border: none;
- 
  }
+ .expertise{
+   background-color: #c5c5c5;
+   margin-top: -4.5px;
+   padding: 140px 10px 10px 10px;
+ }
+
+ @keyframes animeF2{
+   from{
+     transform: scale(1.03);
+   }
+   50%{
+     transform: scale(1.05);
+  }
+   to{ 
+     transform: scale(1);
+     font-weight: 500;
+  }
+ }
+ .expertise h2{
+  padding-top: 50px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+.expertise .detail-expertise{
+  float: right;
+  margin-left: 50px;
+  width: 45%;
+  text-align: justify;
+  color: #c92121;
+}
+.expertise img{
+  width: 750px;
+  margin-top: -30px;
+  animation: animeF2 3s cubic-bezier(0.83, 1.28, 0.5, 1.37) infinite;
+  transition: animation .5s;
+}
+@keyframes displayMsg1{
+  from{
+  transform: scale(1.02);
+  font-weight: 600;
+  }
+  to{
+   transform: scale(1);
+   font-weight: 600;
+  }
+}
+.expertise .para1, .para2, .para3{
+  font-family: 'Montserrat Thin';
+  font-size: 22px;
+  background-color: #dfdede;
+  padding: 15px 30px;
+  margin-bottom: 8px;
+  border-radius: 15px;
+  animation: displayMsg1 3s infinite;
+  z-index: 1;
+  margin-right: 15px;
+}
+.expertise .check{
+  display: inline;
+  position: absolute;
+  top: 40px;
+  right: 97%;
+ 
+}
+.expertise .check img{
+  width: 35px;
+}
+
+ footer{
+   margin-top: 400px;
+   background-color: #fce6e9;
+ }
+ footer .f-logo{
+   float: left;
+   width: 35%;
+   margin: 50px 0px 0px 150px;
+ }
+ footer .f-logo .f-img{
+  width: 120px;
+  margin-bottom: 30px;
+}
+footer .f-logo .social-medias{
+  clear: both;
+  margin-top: 40px;
+}
+footer .f-logo .social-medias img{
+ width: 40px;
+ margin-right: 25px;
+}
+footer .f-logo .social-medias img:hover{
+  transform: scale(0.9);
+}
+footer .useful-links{
+  float: left;
+  margin: 120px 0px 0px 135px;
+}
+footer .services{
+  float: left;
+  margin: 120px 0px 150px 135px;
+}
+footer .services .dropdown-List span:hover{
+ font-weight: 600;
+ cursor: pointer;
+}
+footer .services .dropdown-List img{
+  width: 13px;
+}
+@keyframes anim{
+  from{
+    height: 70px;
+    opacity: 0.8;
+  }
+  to{
+    height: initial;
+    opacity: 1;
+  }
+}
+footer .services .dropdown-List .Liste{
+  display: none;
+  margin: 10px 0px;
+  transition: all .5s;
+  animation: anim .2s cubic-bezier(.86,0,.07,1);
+ }
+footer .useful-links h2, footer .services h2{
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+footer .useful-links ul, footer .services ul{
+  list-style-type: none;
+}
+footer .useful-links a, footer .services a{
+  text-decoration: none;
+  color: #242424;
+}
+footer .useful-links a:hover, footer .services a:hover{
+  border-bottom: 2px solid #242424;
+  font-weight: 600;
+}
+footer .Contact{
+  clear: both;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer .Contact a{
+  background-color: #950014;
+  padding: 30px 20px 10px 20px;
+  border-radius: 15px;
+  margin-left: 50px;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+ }
+ footer .Contact a:hover{
+  background-color: #6b0412;
+  transition: all .5s;
+ }
+footer .Contact img{  
+ width: 40px;
+ margin-right: 5px;
+}
+footer .Kash-copyright{
+  background-color: #950014;
+  padding: 40px;
+  margin-top: 70px;
+}
+footer .Kash-copyright strong{
+  text-align: center;
+  display: block;
+  color: #fff;
+  font-weight: 300;
+  opacity: 0.8;
+}
