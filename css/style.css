@@ -4,13 +4,28 @@
     margin:0;
     box-sizing: border-box;
 }
+.connecting{
+  background-color: #fff;
+  width: 350px;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.connecting .loading #img2{
+ position: absolute;
+ left: 100px;
+ width: 80px;
+ }
 body{
     font-family:'Montserrat Thin',"Open Sans", sans-serif;
     font-size: 19px;
     color: #242424;
 }
 h2{font-size: 2.2em;
-  color: #242424;}
+  color: #242424;
+}
 #logos{
     background-color: #fff;
     height: 105px;
@@ -24,12 +39,28 @@ h2{font-size: 2.2em;
 }
 #logoleft{
     float: right;
-    margin: 15px 80px 0px 0px;
+    margin: 0% 2% 0px 0px;
+}
+#logoleft img.btn-menu{
+  width: 50px;
+  margin: 6% 0px 0px 40px;
+  background-color: #fdf3f3;
+  padding: 5px;
+  border-radius: 7px;
+  display: none;
+}
+#logoleft img.btn-menu:hover{
+ 
+  background-color: #fdefef;
+  transform: scale(0.9);
+  transition: all .4s;
+  cursor: pointer;
 }
 #logos #logoFb img, #logos #logoIg img{
     width: 30px;
     height: auto;
     margin-left: 15px;  
+    margin-bottom: 2%;
 }
 #logos #logoFb img:hover, #logos #logoIg img:hover{
   transform: scale(0.9);
@@ -37,10 +68,9 @@ h2{font-size: 2.2em;
 #navigation{
     height: 75px;
     background-color: #721723;
-   
     position: sticky;
     transition: all 0.5s;
-    z-index: 997;
+    z-index: 909;
 }
 #navigation.header-scrolled, #navigation.header-fixed {
     height: 75px;
@@ -66,7 +96,7 @@ ul.menu li a{
     font-size: 20px;
     color: #fff;
     opacity: 0.8;
-    padding: 5px;
+    padding:0px 5px 24px 5px;
 }
 li #link-contact{
   background-color: #fff;
@@ -83,7 +113,6 @@ li #link-contact:hover{
   color:#ffffff;
   animation: none;
   transition: all .2s;
-  
 }
 @keyframes bordure{
   from{border-bottom: 1px solid #fff;}
@@ -100,8 +129,19 @@ ul.menu .link a.actif{
   border-bottom: 4px solid #fff;
   opacity: 1;
 }
+
 ul.menu .link a.actif:hover{
   animation: none;
+}
+li .actif-contact{
+  background-color: rgba(224, 159, 18, 0.867) !important;
+  color: #fff !important;
+  border: 0px !important;
+  padding: 5px 15px 8px 15px;
+}
+li .actif-contact:hover{
+  
+  padding: 5px 15px 8px 15px !important;
 }
 /**dropdownmenu**/
 .menu #dropdownElement {
@@ -141,6 +181,10 @@ ul.menu .link a.actif:hover{
  padding: 15px 0px;
  width: 98%;
  transition: all .3s;
+}
+#dropdownElement a.actif{
+  border-bottom: 4px solid #fff;
+  opacity: 1 !important;
 }
 #dropdownElement .dropdownMenu li:hover{
   background-color: #c73d4fe7;
@@ -188,7 +232,7 @@ ul.menu .link a.actif:hover{
 /*Css section banner*/
 div.banner{
   position: relative;
-  background: url('../img/Bannière1.png') no-repeat fixed #fce5e5;
+  background: url('../img/Bannière1.png') no-repeat fixed #ffe2e9;
   background-size: 100%;
   height: 520px;
 }
@@ -239,12 +283,12 @@ div.banner{
   margin: 100px 0px;
 }
 .service-annonce .msg-annonce{
- text-align: center;
+ text-align: justify;
  width: 80%;
  margin-left: auto;
  margin-right: auto;
  margin-bottom: 20px;
- font-size: 22px;
+ font-size: 20px;
  color:#4b4b4b;
 }
 .service-annonce .msg-annonce .msg1, .msg2, .msg3{
@@ -283,7 +327,6 @@ div.banner{
  display: block;
  margin-top: -25px;
  padding-bottom: 10px;
- 
  }
  .service-Element a img{
   width: 150px;  
@@ -328,7 +371,6 @@ div.banner{
   text-decoration: none;
   padding: 13px 23px;
   transition: all .2s;
- 
  }
  .service{
   clear: both;
@@ -344,22 +386,24 @@ div.banner{
  .service p{
   text-align: center;
   padding: 10px 0px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
  }
  .service .Imgservice{
-  width: 100%;
+  width: 95%;
   margin-top: 30px;
  margin-left: auto;
  margin-right: auto;
- 
 }
  .service .Imgservice div{
   display: inline-block;
-  margin-left: 80px;
   box-shadow: 2px 4px 8px #d6d6d6;
   border-radius: 15px;
   overflow: hidden;
+  margin-left: 4.5%;
 }
-.service .Imgservice div:hover{
+.service .Imgservice .web:hover, .Imgservice .design:hover, .Imgservice .photo:hover{
   box-shadow: 2px 4px 8px #c5c5c5;
   transition: all .3s;
   transform: scale(1.07);
@@ -390,7 +434,7 @@ div.banner{
 }
 .service .more2{
   margin-top: 100px;
-  width: 10%;
+  width: 11%;
   margin-left: auto;
   margin-right: auto;
  }
@@ -409,6 +453,9 @@ div.banner{
    background-color: rgba(12, 12, 12, 0.637);
    height: 750px;
  }
+ .vision .detail-vision p{
+ margin-bottom: 20px;
+}
  .detail-vision .vision-content{
    width: 58%;
    text-align: justify;
@@ -441,7 +488,7 @@ div.banner{
  }
  .expertise{
    background-color: #c5c5c5;
-   margin-top: -4.5px;
+   margin-top: -5px;
    margin-bottom: 120px;
    padding: 140px 10px 10px 10px;
  }
@@ -467,7 +514,7 @@ div.banner{
   float: right;
   margin-left: 50px;
   width: 45%;
-  text-align: justify;
+  text-align: left;
   color: #c92121;
 }
 .expertise img{
@@ -582,6 +629,7 @@ div.banner{
     width: 92%;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
   }
   .popular-service .imgs a{
     position: relative;
@@ -748,10 +796,14 @@ div.banner{
     left: 8px;
    
   }
+  .Equipe .profil div #Imgpro{
+    width: 290px;
+   
+  }
   .Equipe .profil div{
     box-shadow: 1px 0px 20px 3px #c4c4c4;
     border-radius: 15px;
-    margin-left: 60px;
+    margin-left: 40px;
     background-color: #fff;
     position: relative;
     cursor: pointer;
@@ -760,17 +812,16 @@ div.banner{
     border: none;
     background-color: #fff;
     margin-left: 0px;
-    height: 100px;
+    height: 90px;
     border-radius: 0px 0px 12px 12px;
   }
   .Equipe .profil div div.grades h2{
    font-size: 20px;
-   font-weight: 500;
+   font-weight: 600;
    color: #950014;
    text-align: center;
    padding-top: 20px ;
    margin-bottom: 10px;
-   text-transform: uppercase;
   }
   .Equipe .profil div div.grades span{
     font-size: 17px;
@@ -841,81 +892,406 @@ div.banner{
   .bannerService .bannerMsg{
     text-align: center;
     padding-top: 120px;
-    font-size: 4em;
+    font-size: 3.5em;
     color: #fff;
     opacity: 1;
   }
   .message1{
     margin: 60px;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   .message1 p:first-child{
     margin: 30px 0px;
-    color: #e68200;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   .message1 p:last-child strong{
     color: #950014;
   }
   #services{
-    margin-top: 150px;
+    margin-top: 100px;
+    padding-bottom: 100px;
   }
-  #services p{
-    text-align: center;
-    padding: 10px 0px;
-   }
-   #services .Imgservice{
-    width: 100%;
-    margin-top: 30px;
+  #services #Imgservice{
+   width: 90%;
+   margin-top: 40px;
    margin-left: auto;
-   margin-right: auto;
-  
+   margin-right: auto; 
   }
-   #services .Imgservice div{
-    display: flex;
-    width: 80%;
-    margin-top: 80px;
-    margin-left: 80px;
-    background-color: #f7f4f4;
-    box-shadow: 2px 4px 8px #d6d6d6;
-    border-radius: 15px;
-    overflow: hidden;
-    
-  }
-  #services .Imgservice div:hover{
-    box-shadow: 2px 4px 8px #c5c5c5;
-    transition: all .3s;
-    transform: scale(1.05);
-  }
-  #services .Imgservice div a{
-    text-decoration: none;
-    color: #bc0a0a;
-    font-weight: 500;
-  }
-  #services .Imgservice div img{
-    width: 400px;
-    border-radius: 15px;
-  }
-  #Imgservice div img:hover{
-    transform: scale(1.05);
-    border-radius: 35px;
-  }
-  #services .Imgservice div span{
-    display: block;
-    float: right;
-    padding-left: 35px;
-    margin-top: -30px;
+  #services #Imgservice img{
+   width: 500px;
+   border-radius: 15px;
+   margin-bottom: 50px;
+   box-shadow: 1px 0px 20px 3px #c5c5c5;
+   float: left;
+   }
+   #services #Imgservice h2{
     text-align: justify;
-    font-size: 17px;
-    width: 550px ;
+    font-size: 28px;
+    position: relative;
+    color: #e21c40;
+    }
+    #services #Imgservice h2 span{
+     padding-left: 15px;
+       }
+    #services #Imgservice h2 span img{
+     width: 40px;
+     box-shadow: none;
+     position: absolute;
+     top: 52px;
+      }
+    #services #Imgservice #web, #Imgservice #design, #Imgservice #photo{
+      margin-bottom: 35px;
+      background-color: #fff;
+      padding: 40px 40px 1px 40px;
+      border-radius: 20px;
+       }
+    #services #Imgservice #photo{
+        margin-top: 25px;    
+         }
+    #services #Imgservice .elem-content{
+     width: 50%;
+     text-align: justify;
+     float: left;
+     margin-left: 45px;
+     margin-bottom: 8%;
+    }
+    #services #Imgservice .elem-content p{
+      text-align: justify;
+     }
+   #services #Imgservice .detail {
+   clear: both;
+   font-size: 18px;
+   margin-bottom: 180px;
+   padding-left: 45px;
+   border-left: 4px solid #242424;
+   position: relative;
+
+    }
+    #services #Imgservice .detail p {
+     text-align: justify;
+     
+       }
+    #services #Imgservice .detail p  .site-descript{
+      color: #ff7b00;
+      font-weight: 600;
+    }
+    #services #Imgservice .detail h2 {
+    font-size: 30px;
+    text-align: left;
+    padding: 20px 0px;
+       }
+  #services #Imgservice .detail ul {
+      list-style-type: none;
+
+       }
+  #services #Imgservice .detail ul li h2 {
+    font-size: 26px;
+         }
+  #services #Imgservice .detail table {
+   
+         width: 60%;
+         margin-top: 45px;
+         margin-left: auto;
+         margin-right: auto;
+         border-spacing: 1px 1px;
+        }
+  #services #Imgservice .detail table td h2 {
+          text-align: center;
+          color: #ffffff;
+         }
+  #services #Imgservice .detail table th {
+          color: #fcd8d8;
+          background-color: #d32d4c;
+          padding: 3px;
+          }
+  #services #Imgservice .detail table td {
+         background-color: rgb(247, 101, 101);
+         width: 50%;
+         padding: 8px;
+         text-align: center;
+         color: #fde6e6;
+         font-weight: 500;
+         }
+   #services #Imgservice .detail .more {
+         width: 11%;
+         margin-top: 100px;
+         margin-left: auto;
+         margin-right: auto;
+        
+            }
+    @keyframes animBtn{
+      from{
+        background-color: #ee2658;
+        transform: scale(1.06);
+      }
+      50%{
+        background-color: #ee2658;
+      }
+      to{
+        transform: scale(1);
+        padding: 15px 15px;
+      }
+    }
+    #services #Imgservice .detail .voirplus{
+      background-color: #be0735;
+      width: 130px;
+        color: #fff;
+        text-decoration: none;
+        padding: 15px 15px;
+        border-radius: 10px;
+        animation: animBtn 1.5s ease-in-out infinite;
+        box-shadow: 1px 0px 10px 3px #e70707;
+        border: none;
+        font-size: 16px;
+             }
+   #services #Imgservice .detail .more button:hover {
+         background-color: #e2aa2f;
+         color: #fff;
+         animation: none;
+         box-shadow: 1px 0px 10px 3px #f8bd3e;
+         cursor: pointer;
+             }
+    @keyframes animBox{
+      from{
+          transform: scale(0.8);
+      }
+      to{
+       transform: scale(1);
+      }
+    }
+    #Darkbackground{
+      background-color: #000;
+      opacity: 0.5;
+      position: absolute;
+      z-index: 999;
+      top: 0px;
+      width: 100%;
+      height: 7220px; 
+    }
+    .backgroundNone{
+      display: none;
+    }
+    #web .detail .contactBox{
+      position: fixed;
+      top: 200px;
+      z-index: 1000;
+      animation: animBox .5s cubic-bezier(0, 0.59, 0, 1.22);
+      display: none;
+    }
+    #design .detail .contactBox{
+      position: fixed;
+      top: 200px;
+      z-index: 1000;
+      animation: animBox .5s cubic-bezier(0, 0.59, 0, 1.22);
+      display: none;
+    }
+    #photo .detail .contactBox{
+      position: fixed;
+      top: 200px;
+      z-index: 1000;
+      animation: animBox .5s cubic-bezier(0, 0.59, 0, 1.22);
+      display: none;
+    }
+    .contactBox{
+      width: 410px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #ffffff;
+      padding-top: 20px;
+      border-radius: 15px;
+      box-shadow: 1px 0px 10px 3px #303030;
+      position: fixed;
+      top: 250px;
+      left: 38.5%;
+      z-index: 2;
+      animation: animBox .5s cubic-bezier(0, 0.59, 0, 1.22);
+      display: none;
+    }
+    
+    .contactBox p{
+      background-color: #e6e6e6;
+      color: rgb(22, 22, 22);
+     width: 99%;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 25px;
+     border-radius: 15px;   
+     padding: 5px 10px;
+    }
+    .detail .contactBox ul li{
+      display: inline-block;
+      width: 98%;
+      height: 70px;
+      padding: 10px;
+      border-radius: 15px;
+      margin-left: 1%;
+      margin-bottom: 15px;
+      background-color: #f0f0f0;
+     }
+     .detail .contactBox ul li:hover{
+      background-color: #dfdddd;
+      transition: all .5s;
+     }
+    .detail .contactBox ul li a img.imgBox{
+     width: 50px !important;
+     box-shadow: none !important;
+    }
+    .detail .contactBox ul li a{
+      width: 98%;
+      display: flex;
+    color: rgb(29, 29, 29);
+    font-weight: 500;
+    font-size: 19px;
+     }
+    .detail .contactBox ul li a span{
+    float: left;
+    margin-top: 10px;
+    padding-left: 10px;
+       }
+  /*Page A propos*/
+  .banner-Apropos{
+    background-color: #be1d32;
+    padding: 50px;
   }
-  #services .Imgservice div span h2{
-    font-size: 23px; 
-    font-weight: 600;
-    color: #bc0a0a;
+  .banner-Apropos h2{
+    text-align: center;
+    color: #fff;
   }
+  .detail-Apropos{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+  }
+  .detail-Apropos h2{
+   text-align: center;
+   font-weight: 500;
+   margin: 25px 0px;
+  }
+  .KashVision h2{
+  text-align: center;
+   font-weight: 500;
+   margin: 25px 0px;
+  }
+  .KashVision{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 140px;
+    }
+  .NotreVision p{
+    margin-bottom: 20px;
+  }
+  .KashVision img{
+    width: 500px;
+    border-radius: 15px;
+    float: right;
+    margin-left: 25px;
+    box-shadow: 1px 0px 20px 3px #b1b0b0;
+  }
+  .Mission{
+    border-top: 4px solid #4b4b4b;
+    margin-top: 10%;
+    padding-top: 100px;
+  }
+  .Mission img{
+    float: left;
+    box-shadow: none;
+  }
+  .Mission p{
+    margin-bottom: 20px;
+  }
+  .contactUs {
+    margin-top: 60px;
+    float: right;
+   }
+  .contactUs a{
+   color: #950014;
+   font-weight: 500;
+  }
+
+  /*Page contact*/
+  .contactContent{
+    margin-top: 50px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contactContent p{
+  font-size: 21px;
+  text-align: center;
+  }
+
+  .contactContent .canaux{
+   margin-top: 50px;
+   display: flex;
+    }
+  .contactContent .canaux img{
+    width: 70px;
+   margin: 0% 10%  0% 35%;
+       }
+  .contactContent .canaux div{
+        width: 290px;
+        padding: 25px;
+        background-color: #f3c74d;
+        border-radius: 15px;
+        margin-left: auto;
+        margin-right: auto;
+           }
+      .contactContent .canaux div:hover{
+       
+        background-color: #db9326;
+        transform: scale(1.04);
+        transition: all .3s;
+      
+          }
+   .contactContent .canaux div h4, .canaux div span{
+           text-align: center;
+           display: block;
+           font-size: 15px;
+           padding: 3px 0px;
+          }
+   .contactContent .canaux div h4{
+           margin: 5px 0px;
+           }
+  .contactContent .canaux div a{
+          text-decoration: none;
+          color: #fff;
+         }
+ .contactContent .media{
+       width: 90%;
+      margin-top: 15%; 
+      margin-left: auto;
+      margin-right: auto;
+      }
+.contactContent .media h4{
+    text-align: center;
+    margin: 20px 0px;
+       }
+  .contactContent .media .media-sociaux{
+        display: flex;
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        }
+ .contactContent .media .media-sociaux div{
+        margin-left: 5%;
+        margin-right: auto;
+        display: flex;
+        
+        }
+.contactContent .media a img{
+        width: 50px;
+      
+       }
+.contactContent .media a img:hover{
+       transform: scale(1.08);
+        transition: all .1s;
+       }
+
+
     footer{
    margin-top: 200px;
    background-color: #fce6e9;
@@ -923,18 +1299,18 @@ div.banner{
  footer .f-logo{
    float: left;
    width: 35%;
-   margin: 50px 0px 0px 150px;
+   margin: 5% 0px 5% 8%;
  }
  footer .f-logo .f-img{
   width: 120px;
-  margin-bottom: 30px;
+  margin-bottom: 4%;
 }
 footer .f-logo .social-medias{
   clear: both;
-  margin-top: 40px;
+  margin-top: 4%;
 }
 footer .f-logo .social-medias img{
- width: 40px;
+ width: 35px;
  margin-right: 25px;
 }
 footer .f-logo .social-medias img:hover{
@@ -942,11 +1318,11 @@ footer .f-logo .social-medias img:hover{
 }
 footer .useful-links{
   float: left;
-  margin: 120px 0px 0px 135px;
+  margin: 8% 0px 10% 8%;
 }
 footer .services{
   float: left;
-  margin: 120px 0px 150px 135px;
+  margin: 8% 0px 0% 8%;
 }
 footer .services .dropdown-List span:hover{
  font-weight: 600;
@@ -955,22 +1331,14 @@ footer .services .dropdown-List span:hover{
 footer .services .dropdown-List img{
   width: 13px;
 }
-@keyframes anim{
-  from{
-    height: 70px;
-    opacity: 0.8;
-  }
-  to{
-    height: initial;
-    opacity: 1;
-  }
-}
 footer .services .dropdown-List .Liste{
   display: none;
-  margin: 10px 0px;
-  transition: all .5s;
-  animation: anim .2s cubic-bezier(.86,0,.07,1);
+  margin: 3% 0px 3% 5%;
  }
+ footer .services .dropdown-List #List.show{
+ display: block;
+ }
+ 
 footer .useful-links h2, footer .services h2{
   font-size: 19px;
   font-weight: 600;
@@ -989,15 +1357,16 @@ footer .useful-links a:hover, footer .services a:hover{
 }
 footer .Contact{
   clear: both;
-  width: 50%;
+  width: 55%;
+  margin-top: 5%;
   margin-left: auto;
   margin-right: auto;
 }
 footer .Contact a{
   background-color: #950014;
-  padding: 30px 20px 10px 20px;
+  padding: 3% 2% 2% 12%;
   border-radius: 15px;
-  margin-left: 50px;
+  margin-left: 5%;
   position: relative;
   color: #fff;
   text-decoration: none;
@@ -1008,7 +1377,11 @@ footer .Contact a{
  }
 footer .Contact img{  
  width: 40px;
- margin-right: 5px;
+ margin: 0% 0% 0% 4%;
+ margin-top: 2%;
+ position: absolute;
+ top: 10%;
+ left: 5%;
 }
 footer .Kash-copyright{
   background-color: #950014;
@@ -1021,4 +1394,2441 @@ footer .Kash-copyright strong{
   color: #fff;
   font-weight: 300;
   opacity: 0.8;
+}
+
+/*media queries*/
+
+@media(min-width:1300px){
+  h2{font-size: 2.2em;
+    color: #242424;
+  }
+  #logos #logo1 img{
+     
+      height: auto;
+      margin: 0px 0px 4% 15%;
+  }
+  .menu{
+      float: left;
+      display: flex;
+      white-space: nowrap;
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  ul.menu li{
+      margin-left: 12.5%; 
+  }
+  /*Css section banner*/
+  .banner .msgBanner{
+    top: 25%;
+    left: 15px;
+    font-size: 2.7em;
+    font-family: Verdana, sans-serif;
+    width: 50%;
+  }
+   .service-Element{
+     margin-left: auto;
+     margin-right: auto;
+     padding:5%;
+     width: 85%;
+     background-color: rgb(243, 243, 243);
+     border-radius: 15px;
+     display: flex;
+   }
+   .service-Element div{
+    box-shadow: 2px 5px 12px 2px #d3d3d3;
+    background-color: #fff;
+    display: inline-block;
+    width: 165px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   .service-Element a img{
+    width: 160px;  
+    padding: 35px;
+  }
+   .service{
+     margin-top: 560px;
+   }
+   .service .Imgservice{
+    width: 98%;
+    margin-top: 30px;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  .vision .ImgVision{
+    transform: skewY(356.9deg); 
+   }
+  .vision .detail-vision{
+   width: 100%;
+  }
+  .Work-group{
+    margin: 50px;
+   }
+   .suggest-photo{
+    margin: 200px auto 50px auto;
+    width: 95%;
+  }
+}
+@media (max-width:1378px){
+  div.banner{
+    position: relative;
+    background: url('../img/Bannière1.png') no-repeat fixed #ffe2e9;
+    background-size: 100%;
+    height: 520px;
+  }
+  .banner .msgBanner{
+    top: 20%;
+    width: 60%;
+  }
+  .apropos{
+    padding-top: 60px;
+    margin: 0px 30px 20px 50px;
+   }
+   .apropos h2{
+    padding-bottom: 50px;
+    font-weight: 500;
+   }
+   .apropos #content-apropos{
+   float: left;
+   width: 40%;
+   margin-left: 8%;
+   }
+   .apropos .imgApropos{
+    float: left;
+    width: 48%;
+   }
+   #content-apropos .more{
+    margin-top: 10%;
+    width: 480px;
+   }
+   .detail-vision .vision-content .more3{
+    margin-top: 15%;
+   }
+   .popular-service{
+    width: 95%;
+  }  
+  .popular-service .imgs{
+    width: 100%;
+    margin-left: 2.5%;
+    display: flex;
+  }
+  .popular-service .imgs div {
+  display: inline;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .popular-service .imgs div p{
+    width: 86%;
+    font-size: 16px;
+    }
+  .popular-service div img{
+    width: 230px;
+    height: 220px;
+   }
+
+   /*Page service*/
+   .contactBox{
+    left: 36%;
+  }
+  #Darkbackground{
+
+    height: 7480px; 
+  }
+}
+@media (max-width:1316px){
+  #services #Imgservice{
+    width: 95%;
+   }
+   #services #Imgservice img{
+    width: 45%;
+    float: left;
+    }
+  
+}
+@media (max-width: 1299px){
+  h2{font-size: 1.8em;
+  }
+  #dropdownElement .dropdownMenu {
+    width: 190px;
+  }
+  #dropdownElement #linkMenu{
+    padding:0px 3px 22px 3px;
+   }
+  #dropdownElement .dropdownMenu li{
+   padding: 15px 0px;
+   width: 98%;
+  }
+  #dropdownElement .dropdownMenu li a{
+    font-size: 15px;
+   }
+  #logos #logo1 img{
+    width: 100px;
+    height: auto;
+    margin: 0px 0px 4% 10%;
+}
+  .service-annonce .msg-annonce{
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+  }
+   .service-Element{
+     margin-left: auto;
+     margin-right: auto;
+     padding:100px;
+     width: 95%;
+     display: flex;
+   }
+   .service-Element div{
+    display: inline-block;
+    width: 22%;
+    margin-left: 20px;
+    margin-right: 0px;
+   }
+   .service-Element a img{
+    width: 75%;  
+    padding: 15%;
+    margin-left: 15%;
+  }
+  .apropos{
+    padding-top: 0px;
+    margin: 0px 30px 50% 50px;
+   }
+   .apropos h2{
+    padding-bottom: 5%;
+   }
+   .apropos #content-apropos{
+   float: left;
+   width: 50%;
+   margin-left: 5%;
+   }
+   .apropos .imgApropos{
+    float: left;
+    width: 44%;
+   }
+   #content-apropos .more{
+    margin-top: 8%;
+    width: 480px;
+   }
+   .voirplus{
+    padding: 10px 15px;
+    border-radius: 10px;
+   }
+   .popular-service{
+    width: 55%;
+  }  
+  .popular-service .imgs{
+    width: 100%;
+    margin-left: 0%;
+    margin-right: auto;
+    display: flex;
+  }
+  .popular-service .imgs div {
+  display: inline;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .popular-service div img{
+    width: 210px;
+    height: 220px;
+   }
+   .popular-service .imgs div p{
+    width: 85%;
+    font-size: 16px;
+    }
+
+    /*Page service*/
+  #services #Imgservice{
+    width: 95%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto; 
+   }
+   #services #Imgservice img{
+    width: 45%;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    box-shadow: 1px 0px 20px 3px #c5c5c5;
+    float: left;
+    }
+    #services #Imgservice .elem-content{
+      width: 50%;
+      text-align: justify;
+      float: left;
+      margin-left: 45px;
+      margin-bottom: 8%;
+      margin-top: -5%;
+     }
+     .contactBox{
+      left: 34%;
+    }
+
+    footer .f-logo{
+      float: left;
+      width: 40%;
+      margin: 4% 0px 5% 4%;
+      font-size: 18px;
+    }
+    footer .useful-links{
+      float: left;
+      margin: 8% 0px 10% 4%;
+    }
+    footer .services{
+      float: left;
+      margin: 8% 0px 0% 5%;
+    }
+    footer .useful-links a, footer .services a{
+     font-size: 18px;
+    }
+    footer .Contact{
+      width: 65%;
+      margin-top: 5%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
+@media (max-width:1095px){
+  #Darkbackground{
+    min-height: 9000px; 
+  }
+  footer .services .dropdown-List .Liste{
+    display: none;
+    margin: 3% 0px 3% 1%;
+   }
+   footer .services .dropdown-List .Liste a{
+    font-size: 16px;
+   }
+  footer .Contact{
+    width: 75%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width:961px){
+  #dropdownElement .dropdownMenu {
+    width: 190px;
+  }
+  #dropdownElement #linkMenu{
+    padding:0px 3px 22px 3px;
+   }
+  #dropdownElement .dropdownMenu li{
+   margin-bottom: 20px;
+   text-align: center;
+   padding: 15px 0px;
+   width: 98%;
+   transition: all .3s;
+  }
+  #dropdownElement .dropdownMenu li a{
+   font-size: 15px;
+   }
+  ul.menu li a{
+    text-decoration: none;
+    font-size: 0.9em;
+    color: #fff;
+    opacity: 0.8;
+    padding:0px 5px 24px 5px;
+}
+  .service-Element{
+    margin-left: auto;
+    margin-right: auto;
+    padding:100px;
+    width: 80%;
+    display: block;
+  }
+  .service-Element div{
+    display: inline-block;
+    width: 145px;
+    height: 140px;
+    margin-left: 14%;
+    margin-right: auto;
+    margin-bottom: 20px;
+   }
+   .service-Element span{
+    font-size: 13px;
+   text-align: center;
+   display: block;
+   margin-top: 8px;
+   padding-bottom: 10px;
+   }
+   .service-Element div:nth-child(1){
+    display: inline;
+    float: left;
+   }
+   .service-Element div:nth-child(2){
+    display: inline;
+    float: left;
+   }
+   .service-Element div:nth-child(3){
+    display: inline;
+    float: left;
+   }
+   .clear{
+     clear: both;
+   }
+   .service-Element div:nth-child(4){
+  
+    display: inline;
+    float: left;
+   }
+   .service-Element a img{
+    width: 90px;  
+    padding: 10%;
+    margin-left: 18%;
+  }
+  .apropos{
+    padding-top: 60px;
+    margin: 0px 20px 0px 50px;
+   }
+   .apropos h2{
+    padding: 5% 0%;
+    text-align: center;
+   }
+   .apropos #content-apropos{
+   float: none;
+   clear: both;
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   }
+   .apropos .imgApropos{
+    float: left;
+    width: 65%;
+    margin-left: 15%;
+    margin-top: 0%;
+   }
+   #content-apropos .more{
+    margin-top: 11%;
+    width: 30%;
+    margin-left: 42%;
+   }
+   .voirplus{
+    padding: 10px 15px;
+    border-radius: 10px;
+   }
+   .voirplus:hover{
+    padding: 10px 15px;
+   }
+   .expertise{
+    background-color: #c5c5c5;
+    margin-top: -5px;
+    margin-bottom: 120px;
+    padding: 8% 0% 3% 0%;
+    width: 100%;
+  }
+  .expertise h2{
+   padding-top: 0px;
+   margin-bottom: 6%;
+   font-weight: 500;
+   text-align: center;
+  }
+  .expertise .detail-expertise{
+   float: none;
+   margin-left: auto;
+   margin-right: auto;
+   width: 80%;
+  }
+  .expertise img{
+   width: 0%;
+   margin-top: 0%;
+   display: none;
+  }
+  .expertise .para1, .para2, .para3{
+    font-size: 22px;
+    padding: 3% 5%;
+    margin-bottom: 2%;
+    margin-right: 0%;
+    margin-left: 5%;
+  }
+  .expertise .check img{
+    display: block;
+}
+}
+@media (min-width: 960px) and (max-width: 1517px){
+  #logoleft{
+    float: right;
+    margin: 0% 2% 0px 0px;
+}
+#logoleft img.btn-menu{
+  width: 50px;
+  margin: 6% 0px 0px 40px;
+  background-color: #fdf3f3;
+  padding: 5px;
+  border-radius: 7px;
+  display: none;
+}
+  #navigation{
+    height: 75px;
+    background-color: #721723;
+    position: sticky;
+    transition: all 0.5s;
+    z-index: 909;
+    width: 100%;
+}
+#navigation.header-scrolled, #navigation.header-fixed {
+    height: 75px;
+    background-color: #950014;
+    opacity: 1;
+    transition: all 0.5s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    flex: none;
+  }
+.menu{
+  
+   float: none;
+   display: flex;
+    list-style-type: none;
+    line-height: 70px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul.menu li{
+    margin-left: 11%;
+    justify-content: space-evenly;
+    white-space: nowrap;
+}
+ul.menu li a{
+    text-decoration: none;
+    font-size: 1em;
+    color: #fff;
+    opacity: 0.8;
+    padding:0px 5px 24px 5px;
+}
+li #link-contact{
+  background-color: #fff;
+  padding: 5px 15px 8px 15px;
+  color:#bc0a0a;
+  opacity: 1;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.service{
+  clear: both;
+ background-color: #f1f1f1;
+ margin-top: 35%;
+ padding-bottom: 150px;
+ }
+ .service h2{
+  text-align: center;
+  font-weight: 500;
+  padding: 60px;
+ }
+ .service p{
+  text-align: center;
+  padding: 10px 0px;
+ }
+ .service .Imgservice{
+  width: 85%;
+  margin-top: 30px;
+ margin-left: auto;
+ margin-right: auto;
+ display: flex;
+}
+ .service .Imgservice div{
+  display: flex;
+  box-shadow: 2px 4px 8px #d6d6d6;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: 2%;
+}
+.service .Imgservice .web:hover, .Imgservice .design:hover, .Imgservice .photo:hover{
+  box-shadow: 2px 4px 8px #c5c5c5;
+  transition: all .3s;
+  transform: scale(1.07);
+}
+.service .Imgservice div a{
+  text-decoration: none;
+  color: #242424;
+}
+.service .Imgservice div img{
+  width: 100%;
+  border-radius: 15px;
+}
+.service .Imgservice div span{
+  display: block;
+  padding: 0px 0px 4% 0px;
+  margin-top: -30px;
+  text-align: center;
+  font-size: 17px;
+  width: 100%;
+}
+.service .Imgservice div span h2{
+  font-size: 23px; 
+  font-weight: 600;
+}
+.expertise{
+  background-color: #c5c5c5;
+  margin-top: -5px;
+  margin-bottom: 120px;
+  padding: 8% 4% 3% 4%;
+  width: 100%;
+}
+.expertise h2{
+ padding-top: 0px;
+ margin-bottom: 6%;
+ font-weight: 500;
+}
+.expertise .detail-expertise{
+ float: right;
+ margin-left: 10%;
+ width: 45%;
+}
+.expertise img{
+ width: 40%;
+ margin-top: 2%;
+}
+.expertise .para1, .para2, .para3{
+  font-size: 22px;
+  padding: 2% 5%;
+  margin-bottom: 2%;
+  margin-right: 4%;
+}
+.expertise .check{
+  top: 25%;
+}
+.Work-group{
+  margin-bottom: 600px;
+}
+.Work-group img{
+ width: 42%;
+ margin-top: -2%;
+}
+.Work-group div{
+ text-align: justify;
+ font-size: 18px;
+ margin-top: -1%;
+ margin-right: 25px;
+ width: 50%;
+ float: left;
+ }
+ .Work-group div h2{
+  margin-bottom: 25px;
+  font-size: 1.3em;
+  text-align: center;
+  font-weight: 450;
+  }
+  .CTAWebsite{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  .CTAWebsite img{
+    margin-top: 100px;
+    width: 50%;
+  }
+  .TextforCTA{
+    width: 42%;
+    margin-top: 170px;
+    margin-right: 5%;
+  }
+  .popular-service{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }  
+  .popular-service .imgs{
+    width: 100%;
+    margin-left: 5%;
+    margin-right: auto;
+    display: inline-block;
+  }
+  .popular-service .imgs div {
+  display: inline;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .popular-service .imgs a{
+    position: relative;
+    display: inline-block;
+    margin:0% 1% 0% 0%;
+  }
+  .suggest-photo{
+    margin: 200px 50px 50px 50px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .suggest-photo img{
+   width: 45%;
+ }
+ .suggest-photo div{
+   margin-top: 5%;
+   width: 45%;
+   margin-right: 10%;
+   font-size: 18px;
+ }
+ .Equipe{
+  max-width: 95%;
+  width: 80%;
+}
+
+/*Page service*/
+}
+
+@media (max-width: 1200px){
+  ul.menu li{
+    margin-left: 9%;
+    justify-content: space-evenly;
+    white-space: nowrap;
+}
+ div.banner{
+    position: relative;
+    background: url('../img/Bannière1.png') no-repeat fixed #ffe2e9;
+    background-size: 100%;
+    height: 520px;
+  }
+ .service .Imgservice{
+  width: 88%;
+  margin-top: 30px;
+ margin-left: auto;
+ margin-right: auto;
+ display: flex;
+}
+ .service .Imgservice div{
+  display: flex;
+  box-shadow: 2px 4px 8px #d6d6d6;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: 2%;
+}
+.service .Imgservice .web:hover, .Imgservice .design:hover, .Imgservice .photo:hover{
+  transform: scale(1.05);
+}
+.service .Imgservice div a{
+  text-decoration: none;
+  color: #242424;
+}
+.service .Imgservice div img{
+  width: 100%;
+  border-radius: 15px;
+}
+.service .Imgservice div span{
+  padding: 0px 0px 3% 0px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 17px;
+  width: 95%;
+}
+.service .Imgservice div span h2{
+  font-size: 21px; 
+  font-weight: 600;
+}
+.service .more2{
+  width: 14%;
+  margin-left: 45%;
+ }
+ .vision{
+  margin-top: -1px;
+  position: relative; 
+  overflow: hidden;
+}
+.vision .ImgVision{
+ width: 130%;
+ height: 750px;
+ transform: skewY(356.5deg); 
+}
+.vision .detail-vision{
+  position: absolute;
+  top: 0;
+  background-color: rgba(12, 12, 12, 0.637);
+  height: 750px;
+}
+.vision .detail-vision p{
+margin-bottom: 20px;
+}
+.detail-vision .vision-content{
+  width: 78%;
+  text-align: justify;
+  color: #fff;
+  padding: 130px 80px 0px 80px;
+}
+.detail-vision .vision-content h2{
+ font-size: 2.2em;
+ margin-bottom: 35px;
+ font-weight: 500;
+}
+.detail-vision .vision-content .more3{
+ margin-top: 15%;
+}
+.more3 .voirplus{
+  padding: 10px 15px;
+ }
+ .expertise{
+  background-color: #c5c5c5;
+  margin-top: -5px;
+  margin-bottom: 120px;
+  padding: 8% 4% 3% 4%;
+  width: 100%;
+  position: relative;
+}
+ .expertise h2{
+  font-size: 1.5em;
+ }
+ .expertise img{
+  width: 44%;
+  margin-top: 2%;
+ }
+ .expertise .para1, .para2, .para3{
+   font-size: 18px;
+   margin-right: 6%;
+ }
+ .expertise .check{
+   top: 25%;
+ }
+ .popular-service{
+  width: 90%;
+}  
+.popular-service .imgs{
+  width: 85%;
+  margin-left: 17%;
+  margin-right: auto;
+  display: block;
+}
+.popular-service .imgs div {
+width: 75%;
+}
+.popular-service div img{
+  width: 250px;
+ }
+ .popular-service .imgs div p{
+  width: 87%;
+  }
+  /*Page A  propos*/
+.KashVision{
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 140px;
+  }
+.NotreVision p{
+  margin-bottom: 20px;
+}
+.KashVision img{
+  width: 40%;
+  border-radius: 15px;
+  float: right;
+  margin-left: 25px;
+  box-shadow: 1px 0px 20px 3px #b1b0b0;
+}
+.Mission{
+  border-top: 4px solid #4b4b4b;
+  margin-top: 10%;
+  padding-top: 100px;
+}
+.Mission img{
+  float: left;
+  box-shadow: none;
+  width: 40%;
+}
+}
+@media (max-width:1105px){
+  .banner .msgBanner{
+    top: 15%;
+    font-size: 2.1em;
+    width: 60%;
+  }
+/*Page Service*/
+.bannerService{
+  height: 350px;
+}
+.bannerService .bannerMsg{
+  text-align: center;
+  padding-top: 120px;
+  font-size: 3.5em;
+  color: #fff;
+  opacity: 1;
+}
+.message1{
+  margin: 50px;
+  text-align: center;
+  font-size: 1.1em;
+}
+  #services #Imgservice img{
+    width: 85%;
+    margin-left: 8%;
+    float: none;
+    display: block;
+    }
+    #services #Imgservice .elem-content{
+      width: 100%;
+      text-align: justify;
+      float: left;
+      margin-left: 3%;
+      margin-bottom: 8%;
+      margin-top: -5%;
+     }
+     #services #Imgservice .elem-content h2{
+    position: static;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    display: flex;
+    text-align: center;
+    padding: 0%;
+       }
+     #services #Imgservice h2 span img{
+      width: 40px;
+      box-shadow: none;
+      position: relative;
+      top: 0px;
+      left: 0%;
+      display: inline-block;
+       }
+     #services #Imgservice .elem-content p{
+       text-align: justify;
+      }
+      #services #Imgservice .detail h2{
+        text-align: center;
+        font-size: 28px;
+        margin-left: 5%;
+        width: 90%;
+       }
+      .contactBox{
+        left: 29%;
+      }
+      #services #Imgservice .detail {
+        border-left: none;
+     
+         }
+         #services #Imgservice .detail table {
+   
+          width: 95%;
+         }
+         #services #Imgservice .detail .more {
+          width: 15%;
+          margin-top: 100px;
+          margin-left: auto;
+          margin-right: auto;
+         
+             }
+    
+}
+@media (max-width:1030px){
+    /*Page A  propos*/
+.KashVision{
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 140px;
+  }
+.NotreVision p{
+  margin-bottom: 20px;
+}
+.KashVision img{
+  width: 90%;
+  border-radius: 15px;
+  float: none;
+  display: block;
+  margin-left: 4%;
+  box-shadow: 1px 0px 20px 3px #b1b0b0;
+}
+.Mission{
+  border-top: 4px solid #4b4b4b;
+  margin-top: 10%;
+  padding-top: 100px;
+}
+.Mission img{
+  float: none;
+  display: block;
+  box-shadow: none;
+  margin-left: 3%;
+  border: 4px solid rgb(231, 231, 231);
+}
+/*Page Contact*/
+.contactContent .canaux div{
+      width: 31%;
+      padding: 10px;
+      
+         }
+}
+@media (max-width: 1000px){
+  div.banner{
+    position: relative;
+    background: url('../img/Bannière1.png') no-repeat fixed #ffe2e9;
+    background-size: 100%;
+    height: 320px;
+  }
+  .banner .msgBanner{
+    top: 15%;
+    font-size: 2.3em;
+    width: 70%;
+  }
+  .banner .msgBanner .link-service{
+    font-size: 17px;
+    padding: 15px 10px;
+    margin-left:10%;
+   }
+   .banner .msgBanner .link-service:hover{
+     background-color: #ffffff;
+     padding: 12px 8px;
+     transition: all .2s;
+    }
+  .service{
+   margin-top: 20%;
+   padding-bottom: 150px;
+   }
+ .service .Imgservice{
+  width: 45%;
+  margin-top: 30px;
+ margin-left: auto;
+ margin-right: auto;
+ display: block;
+}
+ .service .Imgservice div{
+  display: flex;
+  box-shadow: 2px 4px 8px #d6d6d6;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: 2%;
+  margin-bottom: 10%;
+}
+.service .Imgservice .web:hover, .Imgservice .design:hover, .Imgservice .photo:hover{
+  transform: scale(1.05);
+}
+.service .Imgservice div a{
+  text-decoration: none;
+  color: #242424;
+}
+.service .Imgservice div img{
+  width: 100%;
+  border-radius: 15px;
+}
+.service .Imgservice div span{
+  padding: 0px 0px 3% 0px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 17px;
+  width: 95%;
+}
+.service .Imgservice div span h2{
+  font-size: 21px; 
+  font-weight: 600;
+}
+.Work-group{
+  margin-bottom: 100px;
+}
+.Work-group img{
+  width: 70%;
+  margin-left: 15%;
+  margin-top: -0%;
+  float: none;
+ }
+ .Work-group div{
+  text-align: justify;
+  margin-top: -1%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  float: none;
+  display: block;
+  }
+  .Work-group div h2{
+   margin-bottom: 25px;
+   font-size: 1.3em;
+   text-align: center;
+   font-weight: 450;
+   }
+   .CTAWebsite{
+    clear: both;
+    border-top: 4px solid #9c0621c7;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  .CTAWebsite img{
+    margin-top: 100px;
+    margin-left: 15%;
+    width: 60%;
+    float: none;
+  }
+  .TextforCTA{
+    float: none;
+    display: block;
+    width: 80%;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+  }
+  .suggest-photo{
+    margin: 200px 50px 50px 50px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .suggest-photo img{
+    margin-left: 12%;
+   width: 75%;
+ }
+ .suggest-photo div{
+   float: none;
+   display: block;
+   margin-top: 5%;
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 18px;
+ }
+ .Equipe{
+  max-width: 95%;
+  width: 90%;
+}
+
+/*Page service*/
+#Darkbackground{
+  background-color: #000;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 999;
+  top: 0px;
+  width: 100%;
+  height: 9500px; 
+}
+
+/*Page contact*/
+.contactContent .media .media-sociaux{
+  display: flex;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+footer .f-logo{
+  float: none;
+  width: 80%;
+  display: block;
+  padding-top: 5%;
+  margin: 10% auto 5% auto;
+  font-size: 18px;
+}
+footer .useful-links{
+  float: left;
+  clear: both;
+  display: block;
+  margin: 2% 0px 14% 10%;
+}
+footer .services{
+  float: left;
+  margin: 2% 0px 0% 8%;
+}
+footer .useful-links a, footer .services a{
+ font-size: 18px;
+}
+footer .services .dropdown-List .Liste a{
+  font-size: 18px;
+  margin-bottom: 5%;
+ }
+footer .Contact{
+  width: 85%;
+  margin-top: 15%;
+  position: relative;
+}
+footer .Contact a{
+  padding: 3% 2% 2% 12%;
+  border-radius: 15px;
+  margin-left: 5%;
+  font-size: 17px;
+ }
+footer .Contact img{  
+ width: 40px;
+ margin: 0% 0% 0% 4%;
+ margin-top: 2%;
+ position: absolute;
+ top: 10%;
+ left: 5%;
+}
+}
+@media (max-width: 959px){
+  ul.menu li{
+    margin-left: 17.5%;
+    justify-content: space-evenly;
+    white-space: nowrap;
+}
+.popular-service{
+  width: 95%;
+}  
+.popular-service .imgs{
+  width: 90%;
+  margin-left: 15%;
+  margin-top: 4%;
+  margin-right: auto;
+  display: block;
+}
+.popular-service .imgs div {
+width: 100%;
+}
+.popular-service div img{
+  width: 250px;
+ }
+ .popular-service .imgs div p{
+  width: 87%;
+  }
+
+}
+@media (max-width:880px){
+  #logos{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 2;
+    box-shadow: 1px 2px 35px 4px #7a7a7a;
+    z-index: 1;
+  }
+  #logos #logo1 img{
+    width: 90px;
+    margin: 0px 0px 0px 30px;
+}
+#logoleft img.btn-menu{
+  width: 45px;
+  margin: 4% 0px 0px 40px;
+  background-color: #fdf3f3;
+  padding: 5px;
+  border-radius: 7px;
+  display: inline-block;
+}
+
+#navigation{
+  height: 75px;
+  position: static;
+  transition: all 0.5s;
+  z-index: 909;
+}
+#navigation.header-scrolled, #navigation.header-fixed {
+  height: 75px;
+  opacity: 1;
+  transition: all 0.5s;
+  position: static;
+  top: 0;
+  width: 100%;
+}
+.menu{
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  background-color: #950014;
+  padding: 10% 0% 7% 0%;
+  float: none;
+  display: none;
+  list-style-type: none;
+  line-height: 70px;
+  z-index: 1;
+}
+#Menu.show{
+  display: block;
+}
+ul.menu li{
+  margin-left: 2%;
+  margin-top: 2%
+
+}
+ul.menu li a{
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  background-color: #aa091e;
+  display: inline-block;
+  width: 95%;
+  opacity: 0.8;
+  padding:0px 5px 0px 5%;
+  border-radius: 8px;
+}
+ul.menu .link a:hover{
+  transition: all .5s;
+  -moz-transition: all .2s;
+  animation: none;
+  border-bottom: none;
+  opacity: 1;
+  background-color: #b61a2f;
+  font-weight: 600;
+}
+ul.menu #dropdownElement a.actif{
+  border-bottom: none;
+  opacity: 1;
+  font-weight: 600;
+  background-color: #b61a2f;
+}
+ul.menu .link a.actif{
+  border-bottom: none;
+  opacity: 1;
+  font-weight: 600;
+  background-color: #b61a2f;
+}
+li #link-contact{
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  background-color: #aa091e;
+  display: inline-block;
+  width: 95%;
+  opacity: 0.8;
+  padding:0px 0px 0px 5%;
+  border-radius: 8px;
+  font-weight: 400;
+}
+li #link-contact:hover{
+  background-color: #b61a2f;
+  transition: all .5s;
+  border: none;
+  padding:0px 5px 0px 5%;
+  color:#ffffff;
+  animation: none;
+  font-weight: 600;
+  opacity: 1;
+}
+  #dropdownElement .dropdownMenu {
+    position: absolute;
+    display: none;
+    top: 70px;
+    left: -1000px;
+    background-color: none;
+    line-height: 10px;
+    padding-top: 25px;
+    animation: none;
+    overflow: hidden;
+}
+#dropdownElement a:hover{
+  background-color: #b61a2f;
+  border-radius: 8px;
+  transition: all .5s;
+  font-weight: 600;
+ }
+#dropdownElement #linkMenu{
+  padding:0px 0px 0px 5%;
+  opacity:0.8;
+ }
+ div.banner{
+  position: relative;
+  background-image: none;
+  background: linear-gradient(to right bottom, #d47800, #f52540);
+  background-size: 100%;
+  height: 420px;
+}
+ .banner .msgBanner{
+  font-size: 2.2em;
+  width: 90%;
+  margin-top: 8%;
+ 
+}
+.banner .msgBanner p{
+  color: rgb(240, 240, 240);
+  font-size: 35px;
+  text-align: center;
+}
+.banner .msgBanner p .comm,.msgBanner p .abst{
+  color:#ffffff;
+  font-weight: 600;
+  font-size: 1.1em;
+  font-family: Montserrat-bold,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.banner .msgBanner .link-service{
+  font-size: 17px;
+  text-decoration: none;
+  color: #bc0a0a;
+  text-align: center;
+  padding: 15px 10px;
+  margin-left:10%;
+ }
+ .banner .msgBanner .link-service:hover{
+   background-color: #ffffff;
+   padding: 12px 8px;
+   transition: all .2s;
+  }
+  .banner .msgBanner .link-service{
+    font-size: 17px;
+    padding: 15px 10px;
+    margin-left: 39%;
+   }
+   .service-annonce .msg-annonce{
+    text-align: center;
+    width: 95%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color:#4b4b4b;
+   }
+   .service-Element{
+    width: 90%;
+    display: block;
+  }
+  .service-Element div{
+    width: 32%;
+    margin-left: 12%;
+   }
+   .service-Element span{
+   margin-top: -3px;
+   padding-bottom: 15px;
+   }
+   .service-Element a img{
+    width: 100px;  
+  }
+   .apropos{
+    padding-top: 60px;
+    margin: 0px 20px 0px 50px;
+   }
+   .apropos h2{
+    padding: 5% 0%;
+    text-align: center;
+    font-size: 26px;
+   }
+   .apropos #content-apropos{
+   float: none;
+   clear: both;
+   width: 95%;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 18px;
+   text-align: justify;
+   }
+   .apropos .imgApropos{
+    float: left;
+    width: 75%;
+    margin-left: 11%;
+    margin-top: 0%;
+   }
+ .vision{
+  margin-top: -1px;
+  position: relative;   
+}
+.vision .ImgVision{
+  display: none;
+}
+.vision .detail-vision{
+  height: 870px;
+  position: relative;
+  top: 0;
+  background: linear-gradient(to left top, #d47800, #f52540) ;
+  
+ 
+}
+.vision .detail-vision p{
+margin-bottom: 20px;
+text-align: left;
+}
+.detail-vision .vision-content{
+  width: 95%;
+ margin-left: auto;
+ margin-right: auto;
+ padding: 70px 5px 0px 5px;
+}
+.detail-vision .vision-content h2{
+ text-align: center;
+ font-size: 28px;
+}
+.detail-vision .vision-content .more3{
+ margin-top: 15%;
+ margin-left: 42%;
+}
+.more3 .voirplus{
+  background-color: #fff;
+  color: #950014;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+ }
+ .expertise{
+  background-color: #f8f8f8;
+}
+ .expertise h2{
+  font-size: 1.5em;
+ }
+ .expertise img{
+  width: 44%;
+  margin-top: 2%;
+ }
+ .expertise .detail-expertise{
+  width: 95%;
+ }
+ .expertise .para1, .para2, .para3{
+   font-size: 18px;
+   margin-right: 6%;
+   background-color: #ebebeb;
+   padding: 3% 6%;
+ }
+ .Work-group{
+  width: 100%;
+  margin-left:auto;
+  margin-right: auto;
+ }
+ .Work-group img{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 4%;
+ }
+ .Work-group div{
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  }
+  .CTAWebsite{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  .CTAWebsite img{
+    margin-top: 100px;
+    margin-left: 5%;
+    width: 80%;
+    padding: 0px;
+  }
+  .TextforCTA{
+    width: 95%;
+    margin-top: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    
+  }
+  .popular-service{
+    width: 100%;
+    border: none;
+  }  
+  .popular-service .imgs{
+    margin-left: 10%;
+  }
+  .suggest-photo{
+    margin: 200px 50px 50px 50px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .suggest-photo img{
+   width: 80%;
+ }
+ .suggest-photo div{
+   margin-top: 5%;
+   width: 95%;
+   margin-right: 10%;
+   font-size: 18px;
+ }
+ .Equipe{
+  max-width: 100%;
+  width: 95%;
+  border: none;
+  background-color: #f5f5f5;
+  z-index: 0;
+}
+.Equipe .profil div #Imgpro{
+  width: 280px;
+ 
+}
+.Equipe .profil div{
+  box-shadow: 1px 0px 20px 3px #c4c4c4;
+  border-radius: 15px;
+  margin-left: 40px;
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+.Equipe .profil div div.grades{
+  border: none;
+  background-color: #fff;
+  margin-left: 0px;
+  height: 85px;
+  border-radius: 0px 0px 12px 12px;
+}
+.icones-arrow .left{
+  left: -5px;
+}
+.icones-arrow .right{
+    right: -5px;
+  }
+
+  .bannerService{
+    height: 450px !important;
+    width: 100%;
+    background-size: 100% 400px;
+  }
+  .message1{
+    margin: 0px;
+    font-size: 1em;
+  }
+    #services #Imgservice img{
+      width: 95%;
+      margin-left: 3%;
+      float: none;
+      display: block;
+      }
+      #services #Imgservice .elem-content{
+        width: 98%;
+        text-align: justify;
+        float: none;
+        padding: 0%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 8%;
+        margin-top: -5%;
+       }
+       #services #Imgservice .elem-content h2{
+      position: static;
+      font-size: 25px;
+      width: 80%;
+    margin-left: 16%;
+    margin-right: auto;
+      display: flex;
+      text-align: center;
+         }
+       #services #Imgservice h2 span img{
+        width: 40px;
+        box-shadow: none;
+        position: relative;
+        top: -8px;
+        left: 0%;
+        display: inline-block;
+         }
+         
+       #services #Imgservice .elem-content p{
+         text-align: left;
+        }
+        .contactBox{
+          left: 27%;
+        }
+        #services #Imgservice .detail {
+          padding-left: 0px;
+          border-left: none;
+         display: block;
+        }
+        #services #Imgservice .detail h2{
+         text-align: center;
+         font-size: 25px;
+        }
+        #services #Imgservice .detail ul li h2 {
+          font-size: 26px;
+          text-align: center;
+          
+               }
+           #services #Imgservice .detail table {
+     
+            width: 95%;
+           }
+           #services #Imgservice .detail .more {
+            width: 22%;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+           
+               }
+/*Page Contact*/
+.contactContent .canaux{
+  display: block;
+  
+     }
+.contactContent .canaux div{
+  width: 50%;
+  padding: 40px;
+  margin-top: 8%;
+     }
+.contactContent .canaux img{
+     margin: 0% 10%  0% 38%;
+         }
+}
+@media (max-width: 816px) and (min-width: 530px){
+  #logos #logoFb img, #logos #logoIg img{
+    display: none;
+ }
+  .service-Element div{
+    width: 38%;
+    margin-left: 6%;
+   }
+   .service-Element a img{
+    width: 106px;  
+    margin-left: 19%;
+  }
+  .service .Imgservice{
+    width: 55%;
+    margin-top: 30px;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+  }
+   .service .Imgservice div{
+    display: flex;
+    box-shadow: 2px 4px 8px #d6d6d6;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: 2%;
+    margin-bottom: 10%;
+  }
+  .service .more2{
+    width: 23%;
+    margin-left: 45%;
+   }
+   .popular-service{
+    width: 95%;
+    border: none;
+    display: block;
+  }  
+  .popular-service .imgs{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  #Darkbackground{
+    background-color: #000;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 999;
+    top: 0px;
+    width: 100%;
+    min-height: 9850px; 
+    overflow-x: hidden;
+  }
+}
+@media (max-width:750px){
+  .bannerService{
+    height: 450px !important;
+    width: 100%;
+    background-size: 100% 400px;
+  }
+  .bannerService .bannerMsg{
+    font-size: 3em;
+  }
+  .message1{
+    margin: 0px;
+    font-size: 1em;
+  }
+  #services #Imgservice{
+    width: 100%;
+    border-radius: none;
+    }
+    #services #Imgservice img{
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 5%;
+      float: none;
+      display: block;
+      }
+      #services #Imgservice .elem-content{
+        width: 95%;
+        text-align: justify;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 8%;
+        margin-top: -5%;
+       }
+       #services #Imgservice #web, #Imgservice #design, #Imgservice #photo{
+        padding: 60px 1px 1px 1px;
+        margin-bottom: 10%;
+        border-radius: 0px;
+         }
+       #services #Imgservice h2{
+      position: static;
+      width: 88%;
+      margin-left: 12%;
+      margin-right: auto;
+      display: flex;
+      text-align: center;
+      padding: 0%;
+         }
+       #services #Imgservice h2 span img{
+        width: 40px;
+        box-shadow: none;
+        position: relative;
+        top: -8px;
+        left: 0%;
+        display: inline-block;
+         }
+         
+       #services #Imgservice .elem-content p{
+         text-align: left;
+        }
+        .contactBox{
+          left: 22%;
+        }
+        #services #Imgservice .detail {
+          border-left: none;
+          text-align: left;
+       
+           }
+           #services #Imgservice .detail p{
+            text-align: left;
+            padding: 0%;
+         
+             }
+           #services #Imgservice .detail table {
+            width: 95%;
+            margin-left: 2%;
+           }
+           #services #Imgservice .detail table td h2{
+           display: block;
+           text-align: center;
+           }
+           #services #Imgservice .detail table th{
+            text-align: center;
+            }
+           #services #Imgservice .detail .more {
+            width: 20%;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+           
+               }
+               .detail .contactBox ul li{
+                display: inline-block;
+                width: 98%;
+                height: 80px;
+                padding: 0%;
+                margin-left: 1%;
+               }
+              .detail .contactBox ul li a img.imgBox{
+               width: 45px !important;
+              }
+              .detail .contactBox ul li a span{
+              margin-top: 25px;
+                 }
+
+                 #Darkbackground{
+                  background-color: #000;
+                  opacity: 0.5;
+                  position: absolute;
+                  z-index: 999;
+                  top: 0px;
+                  width: 100%;
+                  min-height: 10500px; 
+                  overflow-x: hidden;
+                }
+      
+  /*Page contact*/
+  .contactContent .media .media-sociaux{
+    display: flex;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+  footer .Contact{
+    width: 85%;
+    margin-top: 18%;
+    position: relative;
+  }
+  footer .Contact a{
+    padding: 4% 7% 5% 12%;
+    border-radius: 15px;
+    margin-top: 4%;
+    margin-left: 5%;
+    font-size: 17px;
+    display: block;
+   }
+  footer .Contact img{  
+   width: 8.5%;
+   margin: 0% 0% 0% -2%;
+   margin-top: 2%;
+   position: absolute;
+   top: 10%;
+   left: 4%;
+  }
+}
+@media (max-width: 670px){
+  .content{
+    font-size: 18px !important;
+  }
+   h2{
+   font-size: 28px;
+   font-weight: 600 !important;
+   }
+  #logos #logoFb img, #logos #logoIg img{
+    display: none;
+ }
+ .service h2{
+  padding: 30px;
+ }
+ .banner .msgBanner{
+  font-size: 2.2em;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+ .banner .msgBanner p .comm,.msgBanner p .abst{
+  font-size: 1em;
+}
+ .banner .msgBanner .link-service{
+  font-size: 15px;
+  padding: 15px 8px;
+  margin-left: 38%;
+ }
+  .service-Element{
+    width: 90%;
+    margin-top: 7%;
+   }
+  .service-Element div{
+    width: 150px;
+    margin-left: 20%;
+   }
+   .service-Element a img{
+    width: 60%;  
+    margin-left: 20%;
+  }
+  .service-Element span{
+   margin-top: 15px;
+   padding-bottom: 5%;
+   }
+   .apropos #content-apropos{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    text-align: justify;
+    }
+    .apropos h2{
+      padding: 6% 0%;
+     font-size: 28px;
+     }
+    .apropos .imgApropos{
+     width: 90%;
+     margin-left: 2%;
+    }
+  .service .Imgservice{
+    width: 65%;
+    margin-top: 30px;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+  }
+   .service .Imgservice div{
+    display: flex;
+    box-shadow: 2px 4px 8px #d6d6d6;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: 2%;
+    margin-bottom: 10%;
+  }
+  .service .Imgservice div span h2{
+    padding: 50px 0px;
+  }
+  .service .more2{
+    width: 24%;
+    margin-left: 40%;
+   }
+   .suggest-photo{
+    margin: 200px 0px 50px 0px;
+    width: 100%;
+    border-radius: 0%;
+    padding: 2%;
+  }
+  .suggest-photo img{
+   width: 95%;
+   margin-left: 2%;
+ }
+ .suggest-photo div{
+   margin-top: 5%;
+   width: 98%;
+   margin-right: auto;
+   margin-left: auto;
+   font-size: 18px;
+   text-align: left;
+ }
+ .Equipe .profil div div.grades img{
+  width: 42px;
+  margin-left: 15px;
+ }
+ .Equipe .profil div div.grades .media-sociaux1{
+   
+  top: -60px;
+  left: 80px;
+ }
+ .Equipe .profil div div.grades .media-sociaux2{
+   
+  top: -60px;
+  left: 80px;
+ }
+ .Equipe .profil div div.grades .media-sociaux3{
+   
+  top: -60px;
+  left: 80px;
+ }
+ .Equipe .profil .administrator div.grades .media-sociaux4{
+  top: -60px;
+  left: 80px;
+ }
+ .Equipe .profil .cm div.grades .media-sociaux5{
+  top: -60px;
+  left: 80px;
+ }
+ @keyframes transit{
+  from{top: -40px;}
+  to{top: -60px;}
+}
+}
+@media (max-width:645px){
+  .contactBox{
+    left: 17%;
+  }
+
+  .contactContent .canaux div{
+    width: 65%;
+    padding: 40px;
+    margin-top: 8%;
+       }
+  .contactContent .canaux img{
+        width: 70px;
+       margin: 0% 10%  0% 38%;
+           }
+}
+@media (max-width:533px){
+  .popular-service .imgs{
+    margin-left: 15%;
+  }
+  .popular-service h2{
+    font-size: 24px !important;
+    width: 100%;
+   }   
+   .popular-service h2 span img{
+     width: 35px;
+     opacity: 0.9;
+     margin-left: 2%;
+   }
+   .contactBox{
+    left: 10%;
+  }
+  footer .services{
+    float: left;
+    margin: 0% 0px 10% 8%;
+  }
+  footer .useful-links a, footer .services a{
+   font-size: 18px;
+  }
+  footer .services .dropdown-List .Liste a{
+    font-size: 18px;
+    margin-bottom: 5%;
+   }
+  footer .Contact{
+    width: 85%;
+    margin-top: 15%;
+    position: relative;
+  
+  }
+  }
+@media (max-width:500px){
+  #logos #logo1 img{
+    width: 80px;
+    height: auto;
+    margin: 0px 0px 4% 3%;
+}
+  h2{
+    font-size: 1.3em !important;
+  }
+ 
+  .banner .msgBanner p{
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+  }
+  .banner .msgBanner .link-service{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+    width: 45%;
+    display: block;
+   }
+   .service-Element{
+    width: 100%;
+    margin-top: 7%;
+    border-radius: 0%;
+   
+   }
+  .service-Element div{
+    width: 68%;
+    margin-left: 18%;
+    margin-right: auto;
+   }
+   .service-Element a img{
+    width: 105px;  
+    margin-left: 20%;
+  }
+  .service-Element span{
+   margin-top: -5px;
+   padding-bottom: 5%;
+   }
+   .apropos{
+    padding-top: 60px;
+    margin: 0px 2px 0px 2px;
+   }
+   .apropos #content-apropos{
+    width: 95%;
+    float: none;
+    text-align: initial;
+    }
+    .apropos .imgApropos{
+     width: 92%;
+     margin-left: 3%;
+    }
+    #content-apropos .more{
+      width: 120px;
+      margin-left: 35%;
+     }
+     .service p{
+      text-align: center;
+      padding: 10px 0px;
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+     }
+     .service .Imgservice{
+      width: 90%;
+      margin-top: 10%;
+     margin-left: auto;
+     margin-right: auto;
+     display: block;
+    }
+     .service .Imgservice div{
+      margin-left: 2%;
+      margin-bottom: 15%;
+    }
+    .service .more2{
+      width: 120px;
+      margin-left: 35%;
+     }
+     .detail-vision .vision-content .more3{
+      margin-top: 15%;
+      width: 120px;
+      margin-left: 33%;
+     }
+     .expertise .detail-expertise{
+      width: 98%;
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+     }
+     .Work-group img{
+      width: 95%;
+      margin-left: 1.5%;
+      margin-top: 4%;
+     }
+     .CTAWebsite{
+      border-top: 4px solid #e9e9e9c7;
+    }
+     .CTAWebsite img{
+      margin-top: 50px;
+      margin-left: 1%;
+      width: 95%;
+      padding: 0px;
+    }
+    .TextforCTA{
+     text-align: left;
+     width: 98%;
+     float: none;
+     margin-right: 0px;
+     margin-left: auto;
+    }
+    .popular-service h2{
+      font-size: 20px !important;
+      width: 100%;
+     }   
+     .popular-service h2 span img{
+       width: 35px;
+       opacity: 0.9;
+       margin-left: 2%;
+     }
+     .Equipe .profil div div.grades h2{
+      font-size: 20px !important;
+     
+     }
+     .bannerService{
+      height: 420px !important;
+      background-size: 100% 330px;
+    }
+     .bannerService .bannerMsg{
+      font-size: 2.5em !important;
+    }
+    .message1{
+      margin: 0px;
+      padding: 0px 5px;
+      font-size: 1em;
+    }
+    #services #Imgservice{
+      width: 100%;
+      border-radius: none;
+      }
+      #services #Imgservice img{
+        width: 95%;
+        margin-left: 3%;
+        margin-top: 5%;
+        float: none;
+        display: block;
+        }
+        #services #Imgservice .elem-content{
+          width: 95%;
+          text-align: left;
+          float: none;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 8%;
+          margin-top: -5%;
+         }
+     
+         #services #Imgservice .elem-content h2{
+        position: static;
+        width: 97%;
+        margin-left: 1%;
+        margin-right: auto;
+        display: flex;
+        text-align: center;
+        font-size: 20px !important;
+        padding: 0%;
+           }
+           #services #Imgservice h2 span img{
+            width: 35px;
+            box-shadow: none;
+            position: relative;
+            top: -10px;
+            left: 0%;
+            display: inline-block;
+             }
+         #services #Imgservice .elem-content p{
+           text-align: left;
+          }
+          .contactBox{
+            left: 8%;
+          }
+             #services #Imgservice .detail table {
+       
+              width: 95%;
+              margin-left: 2%;
+             }
+             #services #Imgservice .detail .more {
+              width: 25%;
+              margin-top: 100px;
+              margin-left: auto;
+              margin-right: auto;
+             
+   }
+    .contactBox p{
+      padding: 5px 7px;
+      width: 95%;
+                 }
+   .contactContent .canaux div{
+    width: 80%;
+    padding: 40px;
+    margin-top: 8%;    
+      }
+   .contactContent .canaux img{
+    width: 70px;
+    margin: 0% 10%  0% 38%;
+        }
+                       
+/*Page contact*/
+.contactContent .media .media-sociaux{
+  display: flex;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .contactContent .media .media-sociaux div{
+    margin-left: 8%;
+    
+    }    
+}
+@media (max-width:448px){
+  .service-Element div{
+    width: 90%;
+    margin-left: 1%;
+    margin-right: auto;
+   }
+   .service-Element a img{
+    width: 110px;  
+    margin-left: 14%;
+  }
+  .service-Element span{
+   margin-top: -10px;
+   padding-bottom: 5%;
+   }
+   .popular-service .imgs{
+    margin-left: 8%;
+  }
+
+  .popular-service h2{
+    font-size: 20px !important;
+    width: 100%;
+   }   
+   .popular-service h2 span img{
+     width: 35px;
+     opacity: 0.9;
+     margin-left: 2%;
+   }
+   .bannerService{
+    height: 330px !important;
+    background-size: 100% 300px;
+  }
+   .bannerService .bannerMsg{
+    font-size: 2.5em !important;
+  }
+  .message1{
+    margin: 0px;
+    padding: 0px 5px;
+    font-size: 1em;
+  }
+  #services #Imgservice{
+    width: 100%;
+    border-radius: none;
+    }
+    #services #Imgservice img{
+      width: 95%;
+      margin-left: 3%;
+      margin-top: 5%;
+      float: none;
+      display: block;
+      }
+      #services #Imgservice .elem-content{
+        width: 95%;
+        text-align: left;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 8%;
+        margin-top: -5%;
+       }
+       
+       #services #Imgservice .elem-content h2{
+        position: static;
+        width: 97%;
+        margin-left: 1%;
+        margin-right: auto;
+        display: flex;
+        text-align: center;
+        font-size: 20px !important;
+        padding: 0%;
+           }
+           #services #Imgservice h2 span img{
+            width: 35px;
+            box-shadow: none;
+            position: relative;
+            top: -10px;
+            left: 0%;
+            display: inline-block;
+             }
+   
+    
+       #services #Imgservice .elem-content p{
+         text-align: left;
+         margin-bottom: 10px;
+        }
+        .contactBox{
+        
+          left: 4%;
+          width: 90%;
+          top: 180px;
+          margin-bottom: 25%;
+        }
+        #web .detail .contactBox{
+          left: 4%;
+          width: 90%;
+          top: 100px;
+          margin-bottom: 25%;
+        }
+        #design .detail .contactBox{
+          left: 4%;
+          width: 90%;
+          top: 100px;
+          margin-bottom: 25%;
+        }
+        #photo .detail .contactBox{
+          left: 4%;
+          width: 90%;
+          top: 100px;
+          margin-bottom: 25%;
+        }
+           #services #Imgservice .detail table {
+     
+            width: 95%;
+            margin-left: 2%;
+           }
+           #services #Imgservice .detail .more {
+            width: 35%;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+           
+               }
+               .contactBox p{
+               text-align: center;
+               padding: 5px 7px;
+               width: 99%;
+              }
+              .detail .contactBox ul li{
+                display: inline-block;
+                width: 98%;
+                height: 70px;
+                padding: 0%;
+                margin-left: 1%;
+                margin-bottom: 8px;
+               }
+              .detail .contactBox ul li a img.imgBox{
+               width: 45px !important;
+               box-shadow: none !important;
+      
+              }
+              .detail .contactBox ul li a{
+                width: 98%;
+                display: flex;
+              color: rgb(29, 29, 29);
+              font-weight: 500;
+              font-size: 17px;
+               }
+              .detail .contactBox ul li a span{
+              float: left;
+              margin-top: 25px;
+              padding-left: 10px;
+                 }
+}
+
+@media (max-width:400px){
+  #Darkbackground{
+    background-color: #000;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 999;
+    top: 0px;
+    width: 100%;
+    min-height: 10500px; 
+    overflow-x: hidden;
+  }
+
+  .contactContent .canaux div{
+    width: 90%;
+    padding: 40px;
+    margin-top: 8%;
+       }
+  .contactContent .canaux img{
+        width: 70px;
+       margin: 0% 10%  0% 35%;
+           }
+}
+@media (max-width:386px){
+  #services #Imgservice #photo .elem-content h2{
+    position: static;
+    width: 98%;
+    margin-left: 1%;
+    font-size: 18px !important;
+   
+       }
+
+}
+@media (max-width:325px){
+  #services #Imgservice #photo .elem-content h2{
+    width: 80%;
+    margin-left: 0%;
+    position: relative;
+    padding-bottom: 5%;
+    font-size: 15px;
+       }
+       #services #Imgservice h2 span  #ImgPhoto{
+        width: 30px;
+        position: absolute;
+        top: -5px;
+        left: 200px;
+         }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil-KashProduction</title>
+    <title>services-kashproduction</title>
     <link rel="shortcut icon" href="img/logoKashProd.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
@@ -17,40 +17,36 @@
     <!--Section En-tête de la page-->
         <header>
             <div id="logos">
-                <a id="logo1" href="#"><img src="img/logoKashProd.png" alt="logo KashProduction"></a>
+                <a id="logo1" href="index.html"><img src="img/logoKashProd.png" alt="logo KashProduction"></a>
                 <div id="logoleft">
-                    <a id="logoFb" href=""><img src="img/facebook1.png" alt="logo facebook"></a>
-                    <a id="logoIg" href=""><img src="img/instagram.png" alt="logo instagram"></a>
+                    <a id="logoFb" href="https://www.facebook.com/profile.php?id=100057136971488" target="_blank"><img src="img/facebook1.png" alt="logo facebook"></a>
+                    <a id="logoIg" href="" target="_blank"><img src="img/instagram.png" alt="logo instagram"></a>
+                    
+                    <img class="btn-menu" id="btnMenu" src="img/menu.png" alt="menu">
                 </div>
-                
             </div>
             <nav id="navigation" class="">
-                <ul class="menu">
+                <ul class="menu" id="Menu">
                     <li class="link"><a href="index.html">Accueil</a></li>
-                    <li id="dropdownElement"><a class="actif" id="linkMenu" href="services.html">Services<ul class="dropdownMenu" id="drop-down-Menu">
-                        <li><a href="">Création de site web</a></li>
-                        <li><a href="">Conception Graphique</a></li>
-                        <li><a href="">Photographie</a></li>
-                    </ul></a>
-                       
+                    <li class="link" id="dropdownElement"><a class="actif" id="linkMenu" href="services.html">Services</a>
                     </li>
                     <li class="link"><a href="">Exposition</a></li>
-                    <li class="link"><a href="">A propos</a></li>
-                    <li><a id="link-contact" href="">Contact</a></li>
+                    <li class="link"><a href="a-propos.html">A propos</a></li>
+                    <li><a id="link-contact" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <div class="content">
+        <div class="content" id="Content">
 
         <!--Section bannière-->
          <div class="bannerService">
              <h2 class="bannerMsg">
-                 Service
+                 Services
              </h2>
           
         </div>
          <!--Section annonce-->
-         <div class="message1">
+         <div id="msg1" class="message1">
              <p>Toutes vos préoccupations sont au centre de notre attention.</p>
              <p><strong>Kash Production</strong> disponibilise tous les outils pour répondre, proposer et réaliser exactement ce que vous avez imaginé 
                 <br>En passant par la <strong>Conception graphique</strong>, <strong>le développement web</strong> ainsi que <strong>la photographie évènementielle</strong>, notre équipe vous accompagne dans
@@ -59,61 +55,204 @@
          </div>
           <!--Section nos services-->
           <div class="service" id="services">
-                <h2>Nos services</h2>
+                <h2 id="title">Nos services</h2>
             
-                <div class="Imgservice">
-                    <div>
-                        <a href=""><img src="img/webcreation.jpg" alt="">
-                            <span><h2>Création de site Web</h2><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem mollitia deserunt</span></span>
-                        </a>
+                <div id="Imgservice">
+                    <div id="web">
+                        <img id="img-Web" src="img/webcreation.jpg" alt="">
+                        <div class="elem-content">
+                            <h2>Création de site Web <span><img src="img/world-wide-web.png" alt="pic web"></span></h2>
+                            <p>Nous vous offrons un service de développement des sites web sur mesure adapté à votre secteur d'activité.</p>
+                                
+                                <p>Nous disponsons d'un développeur web largemment compétent prêt à vous accompagner de l'idée, le cahier de charge, au maquetage et 
+                                jusqu'à la création de votre site web avec du code en utilisant les languages de programmations les plus populaires et efficaces.
+                            </p>
+                        </div>
+                            
+                            <div class="detail">
+                           
+                                <h2>Catégories de sites web que nous créeons</h2>
+                                <ul>
+                                    <li>
+                                        <h2>Site web vitrine</h2>
+                                        <p>Nous vous créeons de sites web vitrine pour vous permettre de mettre toutes les activités de votre entreprise en lumière.</p>
+                                        
+                                        <p>Parce que vous avez besoin d'expliquer et de présenter à vos clients et prospects ce qu'est exactement votre 
+                                            entreprise. <br> Avec l'avantage qu'offre le web, nous pouvons mettre en ligne pour vous une énorme quantité d'informations importantes
+                                            concernant vos activités commerciales ou pas et ainsi facilité l'extension de votre visibilité dans le monde entier.
+                                        </p>
+                                        <p>Avec un site vitrine, vous aurez droit à : <span class="site-descript">une page d'accueil, une page service, A propos, Contact et Une page pour les politiques de confidentialité.</span></p>
+                                    </li>
+                                    <li>
+                                     <h2>Portfolio ou site web personnel</h2>
+                                     <p>Avez-vous besoin de marquer votre présence dans les moteurs de recherches en tant qu'artiste, personnalité publique, un homme d'affaire ou autre ? <br>
+                                     Laissez Kash production vous accompagner et vous construire une référence sur internet à travers un site web personnalisé qui étale votre expertise. </p>
+                                    
+                                </ul>
+                                <table>
+                                    <td colspan="2"><h2>Tarifs</h2></td>
+                                    <tr></tr><th>Type de site web</th>
+                                    <th>Prix</th>
+                                    <tr></tr>
+                                    <td>Site vitrine</td>
+                                    <td>350$</td>
+                                    <tr></tr>
+                                    <td>Site porfolio</td>
+                                    <td>250$</td>                          
+                                </table>
+                                <div class="more">
+                                    <button class="voirplus" id="displayBox">Commander</button>
+                                </div>
 
-                        <div class="detailWeb">
-                           <p>Nous vous offrons un service de développement des sites web sur mesure adapté à votre contexte.
-                               <br>
-                               <br>Nous disponsons d'un développeur web largemment compétent prêt à vous accompagner de l'idée, le cahier de charge, au maquetage et 
-                               jusqu'à la création de votre site web avec du code en utilisant les languages de programmations les plus populaires et efficaces.
-                           </p>
+                                <div class="contactBox" id="Contact-Box">
+                                    <p>
+                                        Appelez-nous ou écrivez-nous maintenant pour passer votre commande.
+                                        <span>spécifiez-nous clairement le service que vous avez besoin. Cliquez parmis les liens ci-dessous pour contacter notre service client.</span>
+                                    </p> 
+                                    <ul>
+                                        <li>
+                                            <a href="tel:+243 979576047"> 
+                                                <img class="imgBox" src="img/telephone1.png" alt=""><span>+243 979576047</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:">
+                                                <img class="imgBox" src="img/gmail.png" alt=""><span>kashproduction@gmail.com</span>
+                                            </a>
+                                        </li>
+                                        <li> 
+                                            <a href="https://wa.me/message/2IQ3RDMU5NRIP1">
+                                                 <img class="imgBox" src="img/whatsapp1.png" alt="logo whatsapp"><span>+243 979576047</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                             </div>
+                             
+                        
+                    </div>
+                    <div id="design">
+                        <img id="img-design" src="img/ImgDesign.jpg" alt="photo design graphique">
+                        <div class="elem-content">
+                            <h2>Conception Graphique<span><img src="img/graphic-design.png" alt="pic graphic-design"></span></h2>
+                            <p>Avec une touche particulière, nous sommes bien placé pour transformer votre image de marque avec notre service de conception graphique.</p>
 
-                           <h2>Catégories de sites web que nous créeons</h2>
-                           <ul>
-                               <li>
-                                   Site web vitrine
-                                   <p>Nous vous créeons de sites web vitrine pour vous permettre de mettre votre entreprise en lumière.</p>
-                                   <h3>
-                                       Pourquoi un site web vitrine ?
-                                   </h3>
-                                   <p>Parce que vous avez besoin d'expliquer et de présenter à vos clients et prospects ce qu'est exactement votre 
-                                       entreprise. <br> Avec l'avantage qu'offre le web, nous pouvons mettre en ligne pour vous une énorme quantité d'information
-                                       concernant votre structure et ainsi facilité l'extension de votre visibilité dans le monde entier.
-                                   </p>
-                               </li>
-                               <li>
-                                Portfolio ou site web personnel
-                                <p>Avez-vous besoin de marquer votre présence dans les moteurs de recherches en tant qu'artiste, personnalité publique, un homme d'affaire ou autre ? <br>
-                                Laissez Kash production vous accompagner et vous construire une référence sur internet à travers un site web personnalisé. </p>
-                                <h3>
-                                    Pourquoi un site web vitrine ?
-                                </h3>
-                                <p>Parce que vous avez besoin d'expliquer et de présenter à vos clients et prospects ce qu'est exactement votre 
-                                    entreprise. <br> Avec l'avantage qu'offre le web, nous pouvons mettre en ligne pour vous une énorme quantité d'information
-                                    concernant votre structure et ainsi facilité l'extension de votre visibilité dans le monde entier.
-                                </p>
-                            </li>
-                           </ul>
+                            <p>Nous vous créeons des logos professionels, des affiches publicitaires, roll-up, dossier de présentattion, carte de visite, Charte graphique, profil d'entreprise et bien plus encore.</p>
+                            <p>Notre équipe des designers graphique est en mésure de réconstruire et améliorer votre charte graphique enfin de l'alignée selon votre vision globale.</p>
+                        </div>
+                           
+                        <div class="detail">
+                           
+                            <table>
+                                <td colspan="2"><h2>Tarifs</h2></td>
+                                <tr></tr><th>Type de conception</th>
+                                <th>Prix</th>
+                                <tr></tr>
+                                <td>Logo</td>
+                                <td>50$</td>
+                                <tr></tr>
+                                <td>Affiche</td>
+                                <td>10$ (1 unité)</td>
+                                <tr></tr>
+                                <td>carte de visite</td>
+                                <td>5$</td>
+                                <tr></tr>
+                                <td>charte graphique</td>
+                                <td>---</td>                                   
+                            </table>
+                            <div class="more">
+                                <button class="voirplus" id="displayBox2">Commander</button>
+                               
+                            </div>
+
+                            <div class="contactBox" id="Contact-Box2">
+                                <p>
+                                    Appelez-nous ou écrivez-nous maintenant pour passer votre commande.
+                                    <span>spécifiez-nous clairement le service que vous avez besoin. Cliquez parmis les liens ci-dessous pour contacter notre service client.</span>
+                                </p> 
+                                <ul>
+                                    <li>
+                                        <a href="tel:+243 979576047"> 
+                                            <img class="imgBox" src="img/telephone1.png" alt=""><span>+243 979576047</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:">
+                                            <img class="imgBox" src="img/gmail.png" alt=""><span>kashproduction@gmail.com</span>
+                                        </a>
+                                    </li>
+                                    <li> 
+                                        <a href="https://wa.me/message/2IQ3RDMU5NRIP1">
+                                             <img class="imgBox" src="img/whatsapp1.png" alt="logo whatsapp"><span>+243 979576047</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <a href=""><img src="img/ImgDesign.jpg" alt="photo design graphique">
-                            <span><h2>Conception Graphique</h2><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem mollitia deserunt</span></span>
-                        </a>
+                    
+                    <div id="photo">
+                        <img src="img/ImgPhoto.jpg" alt="appareil photo">
+                        <div class="elem-content">
+                            <h2>Photographie Evènementielle <span><img id="ImgPhoto" src="img/camera.png" alt="pic camera"></span></h2>
+                            <p>Avec notre service de photographie, nous nous surpassons pour rendre vos moments le plus inoubliables possible.</p>
+                            <p>Nous employons des matériels de capture de dernière génération enfin de répondre à vos besoins médiatiques.</p>
+                            <br>Pour tout vos céremonies comme: Mariage, Anniversaire, Conférence & Reunion, nous sommes prêts pour vous service.
+                        </div>
+                        <div class="detail">
+                            <table>
+                                <td colspan="2"><h2>Tarifs</h2></td>
+                                <tr></tr><th>Type de céremonies</th>
+                                <th>Prix par Heure</th>
+                                <tr></tr>
+                                <td>Mariage</td>
+                                <td>---</td>
+                                <tr></tr>
+                                <td>Fête d'anniversaire</td>
+                                <td>---</td>
+                                <tr></tr>
+                                <td>Conférence</td>
+                                <td>---</td>
+                                <tr></tr>
+                                <td>reunion</td>
+                                <td>---</td>    
+                                <tr></tr>
+                                <td>Autres</td>
+                                <td>---</td>                               
+                            </table>
+                            <div class="more">
+                                <button class="voirplus" id="displayBox3">Commander</button>
+                            </div>
+
+                            <div class="contactBox" id="Contact-Box3">
+                                <p>
+                                    Appelez-nous ou écrivez-nous maintenant pour passer votre commande.
+                                    <span>spécifiez-nous clairement le service que vous avez besoin. Cliquez parmis les liens ci-dessous pour contacter notre service client.</span>
+                                </p> 
+                                <ul>
+                                    <li>
+                                        <a href="tel:+243 979576047"> 
+                                            <img class="imgBox" src="img/telephone1.png" alt=""><span>+243 979576047</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:">
+                                            <img class="imgBox" src="img/gmail.png" alt=""><span>kashproduction@gmail.com</span>
+                                        </a>
+                                    </li>
+                                    <li> 
+                                        <a href="https://wa.me/message/2IQ3RDMU5NRIP1">
+                                             <img class="imgBox" src="img/whatsapp1.png" alt="logo whatsapp"><span>+243 979576047</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <a href=""><img src="img/ImgPhoto.jpg" alt="appareil photo">
-                           <span><h2>Photographie</h2><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem mollitia deserunt</span></span>
-                        </a>
                     </div>
+                   
                 </div>
-           </div>
+           
 
           
 
@@ -149,39 +288,26 @@
                 </div>
             </div>
 
-            <!--Section annonce photo-->
-            <div class="suggest-photo">
-                <img src="img/Photographer.jpg" alt="un photographe">
-
-                <div class="photo-content">
-                    Avez-vous une céremonie en vue ? un marriage, une fête d'anniversaire ou une conférence ?
-                    Laissez-nous vous offrir un <strong>service médiatique</strong> de qualité superieure avec notre département de la <strong>photographie.</strong>
-                    <a href="">Contacter nous maintenant pour reserver votre date</a>
-                </div>
-            </div>
-
-           
+            <div id="Darkbackground" class="backgroundNone"></div>
         <footer>
             <div class="f-logo">
-                <a href=""><img class="f-img" src="img/logoKashProd.png" alt="logo KashProd"></a>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Ducimus excepturi enim dolorem unde culpa nemo nobis eum qui consectetur minus quibusdam, 
-                    eaque corrupti aliquid fugiat sunt quasi illum labore maiores.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="index.html"><img class="f-img" src="img/logoKashProd.png" alt="logo KashProd"></a>
+                <p><em>Kash production</em> est une entreprise informatique qui évolue dans le domaine de la conception graphique,
+                    de la photographie évènementielle et dans la création de site web pour les entreprises et organisations</p>
                 
                 <div class="social-medias">
-                    <a href=""><img src="img/facebook (1).png" alt="logo facebook"></a>
-                    <a href=""><img src="img/instagram (1).png" alt="logo instagram"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100057136971488" target="_blank"><img src="img/facebook (1).png" alt="logo facebook"></a>
+                    <a href=""><img src="img/instagram (1).png" alt="logo instagram" target="_blank"></a>
                 </div>
             </div>
             <div class="useful-links">
                 <ul>
                     <h2>Liens Importants</h2>
-                    <li><a href="">Accueil</a></li>
-                    <li><a href="">Services</a></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
                     <li><a href="">Exposition</a></li>
-                    <li><a href="">A Propos</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="a-propos.html">A Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="services">
@@ -192,29 +318,30 @@
                              <img class="fleche-droite" id="flecheDroite" src="img/right-arrow.png" alt="flèche droit">
                         </span>
                         <ul id ='List' class="Liste">
-                            <li><a href="">Logo & Charte graphique</a></li>
-                            <li><a href="">Illustrations & affiches publicitaire</a></li>
-                            <li><a href="">Roll-Up</a></li>
-                            <li><a href="">Carte de visite & Invitation</a></li>
+                            <li><a href="services.html#design">Logo & Charte graphique</a></li>
+                            <li><a href="services.html#design">Illustrations & affiches publicitaire</a></li>
+                            <li><a href="services.html#design">Roll-Up</a></li>
+                            <li><a href="services.html#design">Carte de visite & Invitation</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Photographie Evènementielle</a></li>
-                    <li><a href="">Développement de sites webs</a></li>
-                    <li><a href="">Logo & Chart graphic</a></li>
+                    <li><a href="services.html#photo">Photographie Evènementielle</a></li>
+                    <li><a href="services.html#title">Développement de sites webs</a></li>
+                   
                 </ul>
             </div>
             <div class="Contact">
                 <a href="mailto:KashProduction@gmail.com"><img src="img/gmail-logo.png" alt="email logo">KashProduction@gmail.com</a>
-                <a href=""><img src="img/telephone.png" alt="telephone logo">+243 000 000 000</a>
+                <a href="tel:+243 979576047"><img src="img/telephone.png" alt="telephone logo">+243 979576047</a>
             </div>
             <div class="Kash-copyright">
-                <strong>Kash Production &copy; 2023</strong>
+                <strong>Kash Production &copy; <span></span></strong>
             </div>
         </footer>
         <a href=""></a>
         <a href="#" class="back-to-top" style="display:none;"><img src="img/totop.png" alt="totop"></a>
 
-         <script src="js/main.js"></script>
-         
+        <script src="js/script.js"></script>
+        <script src="js/main.js"></script>
+    </div>
 </body>
 </html>

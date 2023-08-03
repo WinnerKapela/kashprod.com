@@ -11,9 +11,18 @@ function afficheMenu(){
   aLink.style.opacity = '1';
 }
 function cacheMenu(){
-  ulhide.style.display = '';
+  ulhide.style.display = 'none';
   aLink.style.opacity = '';
 }
+
+//Display Menu for small devices
+$(document).ready(function(){
+  $('#btnMenu').click(function(){
+      $('#Menu').slideToggle('show');
+     
+  });
+ 
+});
 
 //footer, service elements
 var li = document.getElementById('dropdownList');
@@ -23,17 +32,16 @@ var List = document.getElementById('List');
 var Liste = document.querySelector('ul.Liste');
 
 li.addEventListener('click', displayElement);
-closeli.addEventListener('dblclick', HideElement);
+closeli.addEventListener('click', HideElement);
 
 function displayElement(){
   img.setAttribute('src','img/down-arrow.png');
-  List.style.display = 'block';
+ 
 
 }
 function HideElement(){
   img.setAttribute('src','img/right-arrow.png');
-  Liste.style.display = 'none';
- 
+  
 }
 
 //display icones Fb & Ig
@@ -118,7 +126,7 @@ const dragStart = (e) => {
 const dragging = (e) => {
   if(!isDragging) return; // Is isDragging est false retourne ici
   // Met en jour la position du scroll du carousel basé sur le mouvement sur le cursor
-  carousel.scrollLeft = e.pageX;
+  carousel.scrollLeft = startScrollLeft - (startX - e.pageX);
 }
 const dragstop = () => {
   isDragging = false;
@@ -129,33 +137,10 @@ carousel.addEventListener('mousemove', dragStart);
 carousel.addEventListener('mousemove', dragging);
 document.addEventListener('mouseup',dragstop);
 
+//Footer Update
+var copyright = document.querySelector('.Kash-copyright strong span');
+var date = new Date();
+var year = date.getFullYear();
 
-jQuery(document).ready(function( $ ){
-
-    // Back to top button
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 100) {
-        $('.back-to-top').fadeIn('slow');
-      } else {
-        $('.back-to-top').fadeOut('slow');
-      }
-    });
-    $('.back-to-top').click(function(){
-      $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
-      return false;
-    });
-  
-    // Header fixed on scroll
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 100) {
-        $('#navigation').addClass('header-scrolled');
-      } else {
-        $('#navigation').removeClass('header-scrolled');
-      }
-    });
-  
-    if ($(window).scrollTop() > 100) {
-      $('#navigation').addClass('header-scrolled');
-    }
-});
+copyright.textContent = year;
 

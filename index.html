@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil-KashProduction</title>
+    <title>accueil-kashproduction</title>
     <link rel="shortcut icon" href="img/logoKashProd.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
@@ -13,30 +13,32 @@
     <script src="lib/easing/easing.min.js"></script>
 </head>
 <body>
-
+    
     <!--Section En-tête de la page-->
         <header>
             <div id="logos">
                 <a id="logo1" href="#"><img src="img/logoKashProd.png" alt="logo KashProduction"></a>
                 <div id="logoleft">
-                    <a id="logoFb" href=""><img src="img/facebook1.png" alt="logo facebook"></a>
-                    <a id="logoIg" href=""><img src="img/instagram.png" alt="logo instagram"></a>
+                    <a id="logoFb" href="https://www.facebook.com/profile.php?id=100057136971488" target="_blank"><img src="img/facebook1.png" alt="logo facebook"></a>
+                    <a id="logoIg" href="" target="_blank"><img src="img/instagram.png" alt="logo instagram"></a>
+                    
+                    <img class="btn-menu" id="btnMenu" src="img/menu.png" alt="menu">
                 </div>
                 
             </div>
             <nav id="navigation" class="">
-                <ul class="menu">
-                    <li class="link"><a class="actif" href="#">Accueil</a></li>
-                    <li id="dropdownElement"><a id="linkMenu" href="services.html">Services<ul class="dropdownMenu" id="drop-down-Menu">
-                        <li><a href="">Création de site web</a></li>
-                        <li><a href="">Conception Graphique</a></li>
-                        <li><a href="">Photographie</a></li>
+                <ul class="menu" id="Menu">
+                    <li class="link"><a class="actif" href="index.html">Accueil</a></li>
+                    <li id="dropdownElement" class="DropdownElement"><a id="linkMenu" href="services.html">Services<ul class="dropdownMenu" id="drop-down-Menu">
+                        <li><a href="services.html#title">Création de site web</a></li>
+                        <li><a href="services.html#design">Conception Graphique</a></li>
+                        <li><a href="services.html#photo">Photographie</a></li>
                     </ul></a>
                        
                     </li>
                     <li class="link"><a href="">Exposition</a></li>
-                    <li class="link"><a href="">A propos</a></li>
-                    <li><a id="link-contact" href="">Contact</a></li>
+                    <li class="link"><a href="a-propos.html">A propos</a></li>
+                    <li><a id="link-contact" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -48,7 +50,7 @@
             <div class="msgBanner">
                 <p><span class="comm">Communiquer </span>visiblement la pensée<span class="abst"> abstraite !</span></p>
 
-                <a class="link-service" href="services.html#services">Voir nos services</a>
+                <a class="link-service" href="services.html#msg1">Voir nos services</a>
             </div>
         </div>
          <!--Section annonce-->
@@ -56,19 +58,20 @@
              <p class="msg-annonce">Cherchez-vous à éléver votre <strong class="msg1">communication visuelle</strong> au niveau supérieur ? Vous êtes au bon endroit.
                  Nous vous aidons à batir une <strong class="msg2">image</strong> forte par le biais du <strong class="msg3">numérique</strong> enfin d'améliorer vos résultats en tant qu'entreprise, organisation ou individu. </p>
             <div class="service-Element">
-                <div><a href=""><img src="img/graphic-design.png" alt="pic graphic-design">
+                <div><a href="services.html#design"><img src="img/graphic-design.png" alt="pic graphic-design">
                    <span>Logo & Chart graphic</span></a>
                </div>
                <div>
-                   <a href=""><img src="img/camera.png" alt="pic camera">
+                   <a href="services.html#photo"><img src="img/camera.png" alt="pic camera">
                    <span>Photographie Event.</span></a>
                </div>
+               <span class="clear"></span>
                <div>
-                   <a href=""><img src="img/world-wide-web.png" alt="pic web">
+                   <a href="services.html#title"><img src="img/world-wide-web.png" alt="pic web">
                     <span>Création site web</span></a>
                </div>
                <div>
-                   <a href=""><img src="img/pen-tool.png" alt="Conception graphique"></a>
+                   <a href="services.html#design"><img src="img/pen-tool.png" alt="Conception graphique"></a>
                    <span><a href="">Illustrations & affiches</a></span>
                </div>
                
@@ -79,43 +82,41 @@
          <div class="apropos">
             <img class="imgApropos" src="img/img-apropos.jpg" alt="image à propos">
             <div id="content-apropos">
-                <h2>Qui sommes-nous ?</h2>
+                <h2>A propos de nous</h2>
 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus excepturi enim dolorem unde culpa nemo nobis eum qui consectetur minus quibusdam, 
-                eaque corrupti aliquid fugiat sunt quasi illum labore maiores.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ducimus excepturi enim dolorem unde culpa nemo nobis eum qui consectetur minus quibusdam, 
-                eaque corrupti aliquid fugiat sunt quasi illum labore maiores.
-                
-                <div class="more"><a href="" class="voirplus">Voir plus</a></div>
+                <p>
+                    <em>Kash production</em> est une entreprise qui évolue dans le domaine de la conception graphique,
+                 la photographie évènementielle et dans la création de site web pour les entreprises et organisations
+                </p>
+             <br>Nous orientons notre expertise pour offrir des services digitales aux entreprises, organisations et individus.
+             
+                <div class="more"><a href="a-propos.html" class="voirplus">Voir plus</a></div>
             </div>
          </div>
 
           <!--Section nos services-->
           <div class="service">
                 <h2>Nos services</h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Ducimus excepturi enim dolorem unde culpa nemo nobis eum qui consectetur minus quibusdam
+                <p> Chez <strong>Kash Production,</strong> Nous travaillons de manière à rendre réel votre imagination. Nous prenons donc le temps de comprendre clairement quels sont vos attentes et adaptons un service personnalisé selon votre contexte.
                 </p>
                 <div class="Imgservice">
-                    <div>
-                        <a href=""><img src="img/webcreation.jpg" alt="">
-                            <span><h2>Création de site Web</h2><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem mollitia deserunt</span></span>
+                    <div class="web">
+                        <a href="services.html#title"><img src="img/webcreation.jpg" alt="">
+                            <span><h2>Création de site Web</h2><span>Faites vous construire par nous un site web professionel et efficace réferencé naturellement dans les moteurs de recherches.</span></span>
                         </a>
                     </div>
-                    <div>
-                        <a href=""><img src="img/ImgDesign.jpg" alt="photo design graphique">
-                            <span><h2>Conception Graphique</h2><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem mollitia deserunt</span></span>
+                    <div class="design">
+                        <a href="services.html#design"><img src="img/ImgDesign.jpg" alt="photo design graphique">
+                            <span><h2>Conception Graphique</h2><span>Votre image de marque a maintenant une raison d'être embellie. Profitez de nos services de création des logos, affiches, cartes de visites, dossier de présentation, roll-up et tant d'autres. </span></span>
                         </a>
                     </div>
-                    <div>
-                        <a href=""><img src="img/ImgPhoto.jpg" alt="appareil photo">
-                           <span><h2>Photographie</h2><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem mollitia deserunt</span></span>
+                    <div class="photo">
+                        <a href="services.html#photo"><img src="img/ImgPhoto.jpg" alt="appareil photo">
+                           <span><h2>Photographie</h2><span>Nous vous offrons un service de photographie professionel en temps réel pour toutes sortes d'évènements.</span></span>
                         </a>
                     </div>
                 </div>
-                <div class="more2"><a href="" class="voirplus">Voir plus</a></div>
+                <div class="more2"><a href="services.html" class="voirplus">Voir plus</a></div>
            </div>
 
             <!--Section notre vision-->
@@ -125,14 +126,16 @@
                     <div class="vision-content">
                         <h2>Notre Vision</h2>
 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Ducimus excepturi enim dolorem unde culpa nemo nobis eum qui consectetur minus quibusdam, 
-                            eaque corrupti aliquid fugiat sunt quasi illum labore maiores.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Ducimus excepturi enim dolorem unde culpa nemo nobis eum qui consectetur minus quibusdam, 
-                            eaque corrupti aliquid fugiat sunt quasi illum labore maiores.
-                        </p>
-                        <div class="more3"><a href="" class="voirplus">Voir plus</a></div>
+                        <p><em>Kash production</em> est une entreprise informatique qui évolue dans le domaine de la conception graphique, 
+                            la photographie évènementielle et dans la création de sites web pour les entreprises et organisations.</p>
+
+                        <p> En partant de la vision du Ceo de la structure et l'assemble de son équipe, kash production a une vision claire concernant la manière dont nous préstons nos services.
+                    Comme toute entreprise qui se veut être respecté et prise au serieux, nous aussi avons une vision globale.
+
+                    <br><br>Notre slogan est <em>"Communiquer visiblement la pensée abstraite"</em>. Par cette phrase nous communiquons de manière directe et simple notre point de focalisation.
+                    En effet nous rendons réel à travers l'art graphique et la photographie ce que vous pouvez imaginer ou penser.
+                     </p> 
+                        <div class="more3"><a href="a-propos.html#KashVis" class="voirplus">Voir plus</a></div>
                     </div>
                     
                 </div>
@@ -144,14 +147,14 @@
                 <div class="detail-expertise">
                     <h2>Pourquoi nous choisir ?</h2>
                     <p id="para-1" class="para1">
-                       <span class="check"><img src="img/check.png" alt="img check"></span> Notre Expertise mets en avant ce que vous voulez réellemnt
+                       <span class="check"><img src="img/check.png" alt="img check"></span> Notre Expertise met en avant ce que vous voulez réellement.
                     </p>
                     
                     <p id="para-2" class="para2">
-                        <span class="check"><img src="img/check.png" alt="img check"></span> Notre Expertise mets en avant ce que vous voulez réellemnt
+                        <span class="check"><img src="img/check.png" alt="img check"></span> Nous vous livrons le service dans le meilleur délai et dans des bonnes conditions.
                     </p>
                     <p id="para-2" class="para3">
-                        <span class="check"><img src="img/check.png" alt="img check"></span> Notre Expertise mets en avant ce que vous voulez réellemnt
+                        <span class="check"><img src="img/check.png" alt="img check"></span> Nous n'offrons pas uniquement des services, nous batîssons surtout des bonnes rélations avec nos clients.
                     </p>
                         
                 </div>
@@ -159,27 +162,27 @@
             </div>
 
             <div class="Work-group">
-                <img src="img/WorkTeam.jpg" alt="Equipe">
+               
 
                 <div>
-                    <h2>Kash Production dispose d'une equipe qu'il vous faut pour dynamiser votre structure</h2>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum delectus corrupti, 
-                    aliquid repellendus laborum a, ipsam voluptates rerum dolores aliquam quod ut, blanditiis
-                    ducimus natus dolor sed! Quo, eveniet voluptas! Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Harum delectus corrupti,aliquid repellendus laborum a, ipsam voluptates rerum dolores aliquam quod ut, blanditiis
-                    ducimus natus dolor sed! Quo, eveniet voluptas!
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum delectus corrupti, 
-                    aliquid repellendus laborum a, ipsam voluptates rerum dolores aliquam quod ut, blanditiis
-                    ducimus natus dolor sed! Quo, eveniet voluptas! Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    <h2>Kash Production dispose d'une equipe engagée pour dynamiser votre structure</h2>
+                    
+                    Nous travaillons avec un main d'oeuvre qualifié prêt à vous fournir la pièce manquante pour faire décoler votre activité et atteindre donc votre plein potentiel.
+                    <p>Nous nous assurons de bien comprendre votre secteur avant de vous proposer quoi que ce soit.</p>
+                    Notre équipe dynamique fait de défis de nos clients des opportunités pour exprimer la créativité et donner vie aux pensées abstraites de nos clients.
+
+                    <p>La photographie, design graphique et la création des sites web sont nos secteurs d'activité. </p>
+                    <p>Faîtes confiance à notre equipe et vivez une éxperience client inoubliable.</p>
                     
                 </div>
+                <img src="img/WorkTeam.jpg" alt="Equipe">
             </div>
 
             <div class="CTAWebsite">
                 <img src="img/WebConstruct1.png" alt="web développement">
                 <div class="TextforCTA">
                     <strong>Alors voulez-vous augmenter la visibilité de votre entreprise et toucher des prospects de manière illumitée chaque jour ?</strong>
-                    <strong><span><a href=""> Commander vite </a></span>un site vitrine pour étaler exactement ce que vous faites plus largemment</strong>
+                    <strong><span><a href="contact.html"> Commander vite </a></span>un site vitrine pour étaler exactement ce que vous faites plus largemment</strong>
                 </div>
             </div>
 
@@ -188,22 +191,33 @@
                 <h2>Nos services les plus sollicités <span><img src="img/star.png" alt=""></span></h2>
 
                 <div class="imgs">
-                    <a href="">
-                        <img src="img/designPro.jpg" alt="design photoshop">
-                        <p class="service-name1">Conception affiches,Flyers,Invitation & Carte de viste</p>                   
-                    </a>
-                    <a href="">
-                        <img src="img/ImgDesign.jpg" alt="photo création logo">
-                        <p class="service-name2">Conception de logo & charte graphique</p>                   
-                    </a>
-                    <a href="">
-                        <img src="img/website.jpg" alt="site web">
-                        <p class="service-name3">Création des site Web (type vitrine)</p>
-                    </a>
-                    <a href="">
-                        <img src="img/appareil-photo.jpg" alt="appareil photo">
-                        <p class="service-name4">Photographie évènementielle</p>                    
-                    </a>
+                    <div> <a href="services.html">
+                            <img src="img/designPro.jpg" alt="design photoshop">
+                            <p class="service-name1">Conception affiches,Flyers,Invitation & Carte de viste</p>                   
+                          </a>
+                    </div>
+                   
+                    <div>
+                        <a href="services.html">
+                            <img src="img/ImgDesign.jpg" alt="photo création logo">
+                            <p class="service-name2">Conception de logo & charte graphique</p>                   
+                        </a>
+                    </div>
+                    
+                    <div>
+                        <a href="services.html">
+                            <img src="img/website.jpg" alt="site web">
+                            <p class="service-name3">Création des site Web (type vitrine)</p>
+                        </a>
+                    </div>
+                    
+                    <div>
+                        <a href="services.html">
+                            <img src="img/appareil-photo.jpg" alt="appareil photo">
+                            <p class="service-name4">Photographie évènementielle</p>                    
+                        </a>
+                    </div>
+                    
                 </div>
             </div>
 
@@ -214,7 +228,7 @@
                 <div class="photo-content">
                     Avez-vous une céremonie en vue ? un marriage, une fête d'anniversaire ou une conférence ?
                     Laissez-nous vous offrir un <strong>service médiatique</strong> de qualité superieure avec notre département de la <strong>photographie.</strong>
-                    <a href="">Contacter nous maintenant pour reserver votre date</a>
+                    <a href="contact.html">Contacter nous maintenant pour reserver votre date.</a>
                 </div>
             </div>
 
@@ -229,7 +243,7 @@
                     
                     <div class="profil">
                         <div id="profil-Img" class="Photo-Profile">
-                            <img src="img/remy.jpg" alt="photo Rémy Kashila" draggable="false">
+                            <img id="Imgpro" src="img/remy.jpg" alt="photo Rémy Kashila" draggable="false">
                             <div class="grades">
                                 <h2>Rémy Kashila</h2>
                                 <span>Ceo</span>
@@ -240,7 +254,7 @@
                             </div>
                         </div>
                         <div id="profil-Img2" class="Photo-Profile">
-                            <img src="img/winner.jpg" alt="photo Winner Kapela" draggable="false">
+                            <img id="Imgpro" src="img/winner.jpg" alt="photo Winner Kapela" draggable="false">
                             <div class="grades">
                                 <h2>Winner Kapela</h2>
                                 <span>Développeur Web</span>
@@ -251,7 +265,7 @@
                             </div>
                         </div>
                         <div id="profil-Img3" class="Photo-Profile">
-                            <img src="img/Photographer.jpg" alt="photo Peter" draggable="false">
+                            <img id="Imgpro" src="img/peter.jpg" alt="photo Peter" draggable="false">
                             <div class="grades">
                                 <h2>Peter</h2>
                                 <span>Photographe</span>
@@ -262,7 +276,7 @@
                             </div>
                         </div>
                         <div id="profil-Img4" class="administrator">
-                            <img src="img/dan.jpg" alt="photo Dan Kikemba" draggable="false">
+                            <img id="Imgpro" src="img/dan.jpg" alt="photo Dan Kikemba" draggable="false">
                             <div class="grades">
                                 <h2>Dan Kikemba</h2>
                                 <span>Administratreur</span>
@@ -273,7 +287,7 @@
                             </div>
                         </div>
                         <div id="profil-Img5" class="cm">
-                            <img src="img/taoli.jpg" alt="photo Taoli Binene" draggable="false">
+                            <img id="Imgpro" src="img/taoli.jpg" alt="photo Taoli Binene" draggable="false">
                             <div class="grades">
                                 <h2>Taoli Binene</h2>
                                 <span>Community Manager</span>
@@ -291,25 +305,23 @@
         </div>
         <footer>
             <div class="f-logo">
-                <a href=""><img class="f-img" src="img/logoKashProd.png" alt="logo KashProd"></a>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Ducimus excepturi enim dolorem unde culpa nemo nobis eum qui consectetur minus quibusdam, 
-                    eaque corrupti aliquid fugiat sunt quasi illum labore maiores.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                
+                <a href="index.html"><img class="f-img" src="img/logoKashProd.png" alt="logo KashProd"></a>
+                <p><em>Kash production</em> est une entreprise informatique qui évolue dans le domaine de la conception graphique,
+                    de la photographie évènementielle et dans la création de site web pour les entreprises et organisations</p>
+
                 <div class="social-medias">
-                    <a href=""><img src="img/facebook (1).png" alt="logo facebook"></a>
-                    <a href=""><img src="img/instagram (1).png" alt="logo instagram"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100057136971488" target="_blank"><img src="img/facebook (1).png" alt="logo facebook"></a>
+                    <a href=""><img src="img/instagram (1).png" alt="logo instagram" target="_blank"></a>
                 </div>
             </div>
             <div class="useful-links">
                 <ul>
                     <h2>Liens Importants</h2>
-                    <li><a href="">Accueil</a></li>
-                    <li><a href="">Services</a></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
                     <li><a href="">Exposition</a></li>
-                    <li><a href="">A Propos</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="a-propos.html">A Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="services">
@@ -320,23 +332,23 @@
                              <img class="fleche-droite" id="flecheDroite" src="img/right-arrow.png" alt="flèche droit">
                         </span>
                         <ul id ='List' class="Liste">
-                            <li><a href="">Logo & Charte graphique</a></li>
-                            <li><a href="">Illustrations & affiches publicitaire</a></li>
-                            <li><a href="">Roll-Up</a></li>
-                            <li><a href="">Carte de visite & Invitation</a></li>
+                            <li><a href="services.html#design">Logo & Charte graphique</a></li>
+                            <li><a href="services.html#design">Illustrations & affiches publicitaire</a></li>
+                            <li><a href="services.html#design">Roll-Up</a></li>
+                            <li><a href="services.html#design">Carte de visite & Invitation</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Photographie Evènementielle</a></li>
-                    <li><a href="">Développement de sites webs</a></li>
-                    <li><a href="">Logo & Chart graphic</a></li>
+                    <li><a href="services.html#photo">Photographie Evènementielle</a></li>
+                    <li><a href="services.html#title">Développement de sites webs</a></li>
+                   
                 </ul>
             </div>
             <div class="Contact">
                 <a href="mailto:KashProduction@gmail.com"><img src="img/gmail-logo.png" alt="email logo">KashProduction@gmail.com</a>
-                <a href=""><img src="img/telephone.png" alt="telephone logo">+243 000 000 000</a>
+                <a href="tel:+243 979576047"><img src="img/telephone.png" alt="telephone logo">+243 979576047</a>
             </div>
             <div class="Kash-copyright">
-                <strong>Kash Production &copy; 2023</strong>
+                <strong>Kash Production &copy; <span></span></strong>
             </div>
         </footer>
         <a href=""></a>
@@ -344,5 +356,6 @@
 
          <script src="js/main.js"></script>
          
+         <script src="js/script.js"></script>
 </body>
 </html>
