@@ -32,6 +32,22 @@ h2{font-size: 2.2em;
     padding: 10px;
     line-height: 80px;
 }
+#logos #logo1{
+  display: inline-flex;
+  width: 400px;
+  text-decoration: none;
+  
+  }
+#logos #logo1 .titre{
+font-size: 25px;
+color: #bc0a0a;
+margin-left: 5px;
+font-family: Montserrat;
+}
+#logos #logo1 .titre span{
+  font-size: 25px;
+  color: #f8c426;  
+  }
 #logos #logo1 img{
     width: 110px;
     height: auto;
@@ -395,13 +411,17 @@ div.banner{
   margin-top: 30px;
  margin-left: auto;
  margin-right: auto;
+ display: flex;
 }
  .service .Imgservice div{
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   box-shadow: 2px 4px 8px #d6d6d6;
   border-radius: 15px;
   overflow: hidden;
   margin-left: 4.5%;
+  height: 510px;
+  
 }
 .service .Imgservice .web:hover, .Imgservice .design:hover, .Imgservice .photo:hover{
   box-shadow: 2px 4px 8px #c5c5c5;
@@ -1457,6 +1477,16 @@ footer .Kash-copyright strong{
    margin-left: auto;
    margin-right: auto;
   }
+  .service .Imgservice div{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 4px 8px #d6d6d6;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: 4.5%;
+    height: 510px;
+    
+  }
   .vision .ImgVision{
     transform: skewY(356.9deg); 
    }
@@ -2390,7 +2420,7 @@ width: 75%;
   border-radius: 15px;
   overflow: hidden;
   margin-left: 2%;
-  margin-bottom: 10%;
+  margin-bottom: 20%;
 }
 .service .Imgservice .web:hover, .Imgservice .design:hover, .Imgservice .photo:hover{
   transform: scale(1.05);
@@ -2586,9 +2616,23 @@ width: 100%;
     box-shadow: 1px 2px 35px 4px #7a7a7a;
     z-index: 1;
   }
+  #logos #logo1{
+    display: inline-flex;
+    width: 300px;
+    text-decoration: none;
+    
+    }
+    #logos #logo1 .titre{
+      font-size: 18px;
+      line-height: 50px;
+      }
+    #logos #logo1 .titre span{
+        font-size: 18px;
+        }
   #logos #logo1 img{
-    width: 90px;
-    margin: 0px 0px 0px 30px;
+    width: 65px;
+    height: auto;
+    margin: 0px 0px 30px 30px;
 }
 #logoleft img.btn-menu{
   width: 45px;
@@ -3267,6 +3311,7 @@ text-align: left;
   .service-Element div{
     width: 150px;
     margin-left: 20%;
+    
    }
    .service-Element a img{
     width: 60%;  
@@ -3414,10 +3459,11 @@ text-align: left;
   }
 @media (max-width:500px){
   #logos #logo1 img{
-    width: 80px;
+    width: 65px;
     height: auto;
-    margin: 0px 0px 4% 3%;
+    margin: 0px 0px 1% 3%;
 }
+
   h2{
     font-size: 1.3em !important;
   }
@@ -3633,6 +3679,12 @@ text-align: left;
     }    
 }
 @media (max-width:448px){
+  #logos #logo1{
+    display: inline-flex;
+    width: 250px;
+    text-decoration: none;
+    
+    }
   .service-Element div{
     width: 90%;
     margin-left: 1%;
@@ -3640,7 +3692,8 @@ text-align: left;
    }
    .service-Element a img{
     width: 110px;  
-    margin-left: 14%;
+    justify-content: center;
+    align-items: center;
   }
   .service-Element span{
    margin-top: -10px;
@@ -3808,6 +3861,29 @@ text-align: left;
            }
 }
 @media (max-width:386px){
+  #logos #logo1{
+    display: inline-flex;
+    width: 0px;
+    text-decoration: none;
+    
+    }
+  #logos #logo1 .titre{
+    font-size: 18px;
+    line-height: 0px;
+    display: none;
+    }
+    .service-Element div{
+      width: 160px;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+      align-items: center;
+     }
+     .service-Element a img{
+      width: 110px;  
+     justify-content: center;
+     align-items: center;
+    }
   #services #Imgservice #photo .elem-content h2{
     position: static;
     width: 98%;
@@ -3817,7 +3893,9 @@ text-align: left;
        }
 
 }
-@media (max-width:325px){
+@media (max-width:350px){
+ 
+ 
   #services #Imgservice #photo .elem-content h2{
     width: 80%;
     margin-left: 0%;
