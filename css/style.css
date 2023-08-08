@@ -3863,15 +3863,22 @@ text-align: left;
 @media (max-width:386px){
   #logos #logo1{
     display: inline-flex;
-    width: 0px;
+    width: 70%;
     text-decoration: none;
     
     }
-  #logos #logo1 .titre{
-    font-size: 18px;
-    line-height: 0px;
-    display: none;
-    }
+    #logos #logo1 .titre{
+      font-size: 16px;
+      line-height: 50px;
+      }
+    #logos #logo1 .titre span{
+        font-size: 16px;
+        }
+  #logos #logo1 img{
+    width: 65px;
+    height: auto;
+    margin: 0px 0px 0px 0px;
+}
     .service-Element div{
       width: 160px;
       margin-left: auto;
