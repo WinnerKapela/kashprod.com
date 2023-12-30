@@ -22,9 +22,6 @@ jQuery(document).ready(function( $ ){
       }
     });
 
-    if ($(window).scrollTop() > 100) {
-      $('#navigation').addClass('header-scrolled');
-    }
 }); 
 
 $(document).ready(function(){
